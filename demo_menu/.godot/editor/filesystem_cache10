@@ -1,23 +1,23 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1751043678
+::res://::1751046345
 icon.svg::CompressedTexture2D/CompressedTexture2D::1156638906630597349::1751043646::1751043682::1::::<><><>0<>0<>ac7cc7213fe4c4ff6143478bcb129bfa<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 ::res://Escenas Juegos/::1751043646
 ::res://Escenas Juegos/EscenaContinuarJuego/::1751043646
-escena_continuar_juego.tscn::PackedScene::8647747128842445735::1751043646::0::1::::<><><>0<>0<><>::
+escena_continuar_juego.tscn::PackedScene/PackedScene::8647747128842445735::1751043646::0::1::::<><><>0<>0<><>::
 ::res://Escenas Juegos/EscenaDificultad/::1751043646
-escena_dificultad.tscn::PackedScene::6191750574755606438::1751043646::0::1::::<><><>0<>0<><>::
-::res://Escenas Juegos/EscenaEscenario/::1751043646
-camera_2d.tscn::PackedScene::878232947812910021::1751043646::0::1::::<><><>0<>0<><>::uid://dy74xuhrpkir4::::res://Escenas Juegos/EscenaEscenario/capa_0.gd<>uid://bsqyuvw064wy6::::res://Orden de capas/(0) - Fondo_ColorPlano.png<>uid://dpi5bx23x4qnx::::res://Orden de capas/(1) - Fondo_Estrellas.png<>uid://dylneryxv7jn3::::res://Orden de capas/(2) - Fondo_Estrellas.png<>uid://b6u2fpfyiolbx::::res://Orden de capas/(3) - Fondo_Luna.png<>uid://cniwouvrp5u5r::::res://Orden de capas/(4) - Fondo_Estrellas.png<>uid://cp7pqbkwdlgvh::::res://Orden de capas/(5) - Edificios.png<>uid://cpgx8a7qccd6r::::res://Orden de capas/(6) - Edificios.png<>uid://0fu6ee3lj4y0::::res://Orden de capas/(7) - Edificios.png<>uid://caa820ka51h6p::::res://Orden de capas/(8) - Edificios.png<>uid://bkgcbhbqrb3gt::::res://Orden de capas/(9) - PrimerPlano_Vereda.png<>uid://pq10pq0wf22n::::res://Orden de capas/(10) - PrimerPlano_Faros.png
-capa_0.gd::GDScript::8911657314645517215::1751043646::0::1::::<>ParallaxBackground<><>0<>0<><>::
+escena_dificultad.tscn::PackedScene/PackedScene::6191750574755606438::1751043646::0::1::::<><><>0<>0<><>::
+::res://Escenas Juegos/EscenaEscenario/::1751045453
+camera_2d.tscn::PackedScene::878232947812910021::1751045453::0::1::::<><><>0<>0<><>::uid://dy74xuhrpkir4::::res://Escenas Juegos/EscenaEscenario/capa_0.gd<>uid://bsqyuvw064wy6::::res://Orden de capas/(0) - Fondo_ColorPlano.png<>uid://dpi5bx23x4qnx::::res://Orden de capas/(1) - Fondo_Estrellas.png<>uid://dylneryxv7jn3::::res://Orden de capas/(2) - Fondo_Estrellas.png<>uid://b6u2fpfyiolbx::::res://Orden de capas/(3) - Fondo_Luna.png<>uid://cniwouvrp5u5r::::res://Orden de capas/(4) - Fondo_Estrellas.png<>uid://cp7pqbkwdlgvh::::res://Orden de capas/(5) - Edificios.png<>uid://cpgx8a7qccd6r::::res://Orden de capas/(6) - Edificios.png<>uid://0fu6ee3lj4y0::::res://Orden de capas/(7) - Edificios.png<>uid://caa820ka51h6p::::res://Orden de capas/(8) - Edificios.png<>uid://bkgcbhbqrb3gt::::res://Orden de capas/(9) - PrimerPlano_Vereda.png<>uid://pq10pq0wf22n::::res://Orden de capas/(10) - PrimerPlano_Faros.png
+capa_0.gd::GDScript::8911657314645517215::1751045453::0::1::::<>ParallaxBackground<><>0<>0<><>::
 ::res://Escenas Juegos/EscenaExit/::1751043646
-escena_exit.tscn::PackedScene::3488610669314824415::1751043646::0::1::::<><><>0<>0<><>::
-::res://Escenas Juegos/EscenaMenu/::1751043646
-menu.tscn::PackedScene::8915732129246096308::1751043646::0::1::::<><><>0<>0<><>::uid://dexovbgomwb8l::::res://ScripsMenu/ScriptMenu.gd
+escena_exit.tscn::PackedScene/PackedScene::3488610669314824415::1751043646::0::1::::<><><>0<>0<><>::
+::res://Escenas Juegos/EscenaMenu/::1751045196
+menu.tscn::PackedScene::8915732129246096308::1751045196::0::1::::<><><>0<>0<><>::uid://dexovbgomwb8l::::res://ScripsMenu/ScriptMenu.gd
 ::res://Escenas Juegos/EscenaNuevoJuego/::1751043646
-escena_nuevo_juego.tscn::PackedScene::3093326555062488468::1751043646::0::1::::<><><>0<>0<><>::
+escena_nuevo_juego.tscn::PackedScene/PackedScene::3093326555062488468::1751043646::0::1::::<><><>0<>0<><>::
 ::res://Escenas Juegos/EscenasSettings/::1751043646
-escena_settings.tscn::PackedScene::8121213189455921076::1751043646::0::1::::<><><>0<>0<><>::
-::res://Orden de capas/::1751043646
+escena_settings.tscn::PackedScene/PackedScene::8121213189455921076::1751043646::0::1::::<><><>0<>0<><>::
+::res://Orden de capas/::1751043682
 (0) - Fondo_ColorPlano.png::CompressedTexture2D/CompressedTexture2D::3684343975101661727::1751043646::1751043681::1::::<><><>0<>0<>9a666b0e1c361c8e087a23880a7cea4a<>res://.godot/imported/(0) - Fondo_ColorPlano.png-08278a866d3ef58c7c0ad9bbd89f041d.ctex::
 (1) - Fondo_Estrellas.png::CompressedTexture2D/CompressedTexture2D::8230434274310024873::1751043646::1751043680::1::::<><><>0<>0<>a0cbfc64f54afa2123b4c2ecde0e4303<>res://.godot/imported/(1) - Fondo_Estrellas.png-ad63623928b125d960db08586e968881.ctex::
 (2) - Fondo_Estrellas.png::CompressedTexture2D/CompressedTexture2D::8867299848814926378::1751043646::1751043680::1::::<><><>0<>0<>5bf29c140a1703c01fc73227f7fa16ca<>res://.godot/imported/(2) - Fondo_Estrellas.png-38020f4d1be0bbb69035a12b58ae0b64.ctex::
@@ -30,4 +30,4 @@ escena_settings.tscn::PackedScene::8121213189455921076::1751043646::0::1::::<><>
 (9) - PrimerPlano_Vereda.png::CompressedTexture2D/CompressedTexture2D::3100818976335233191::1751043646::1751043682::1::::<><><>0<>0<>ae369072caad3e12523cade3ab8207a0<>res://.godot/imported/(9) - PrimerPlano_Vereda.png-e8ebf055dd6d4fea47615eed8dbe5ea9.ctex::
 (10) - PrimerPlano_Faros.png::CompressedTexture2D/CompressedTexture2D::1087486799027629111::1751043646::1751043682::1::::<><><>0<>0<>273ec32ae1e3f89cdd918bc64edf37ac<>res://.godot/imported/(10) - PrimerPlano_Faros.png-f2934fb7f8a29897122588627192ae65.ctex::
 ::res://ScripsMenu/::1751043646
-ScriptMenu.gd::GDScript::7488385715990716449::1751043646::0::1::::<>Control<><>0<>0<><>::
+ScriptMenu.gd::GDScript/GDScript::7488385715990716449::1751043646::0::1::::<>Control<><>0<>0<><>::
