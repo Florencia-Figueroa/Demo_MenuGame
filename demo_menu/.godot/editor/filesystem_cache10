@@ -1,4 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
+<<<<<<< Updated upstream
 ::res://::1751042650
 icon.svg::CompressedTexture2D/CompressedTexture2D::1156638906630597349::1750905101::1750905221::1::::<><><>0<>0<>ac7cc7213fe4c4ff6143478bcb129bfa<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 ::res://Escenas Juegos/::1750905317
@@ -30,3 +31,40 @@ escena_settings.tscn::PackedScene/PackedScene::8121213189455921076::1750905101::
 (10) - PrimerPlano_Faros.png::CompressedTexture2D/CompressedTexture2D::1087486799027629111::1750905101::1750905222::1::::<><><>0<>0<>273ec32ae1e3f89cdd918bc64edf37ac<>res://.godot/imported/(10) - PrimerPlano_Faros.png-f2934fb7f8a29897122588627192ae65.ctex::
 ::res://ScripsMenu/::1750905101
 ScriptMenu.gd::GDScript/GDScript::7488385715990716449::1750905101::0::1::::<>Control<><>0<>0<><>::
+=======
+::res://::1751047789
+icon.svg::CompressedTexture2D/CompressedTexture2D::1156638906630597349::1751043646::1751043682::1::::<><><>0<>0<>ac7cc7213fe4c4ff6143478bcb129bfa<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+::res://Escenas Juegos/::1751043646
+::res://Escenas Juegos/EscenaContinuarJuego/::1751043646
+escena_continuar_juego.tscn::PackedScene/PackedScene::8647747128842445735::1751043646::0::1::::<><><>0<>0<><>::
+::res://Escenas Juegos/EscenaDificultad/::1751043646
+escena_dificultad.tscn::PackedScene/PackedScene::6191750574755606438::1751043646::0::1::::<><><>0<>0<><>::
+::res://Escenas Juegos/EscenaEscenario/::1751047340
+camera_2d.tscn::PackedScene::878232947812910021::1751047340::0::1::::<><><>0<>0<><>::uid://dy74xuhrpkir4::::res://Escenas Juegos/EscenaEscenario/capa_0.gd<>uid://bsqyuvw064wy6::::res://Orden de capas/(0) - Fondo_ColorPlano.png<>uid://dpi5bx23x4qnx::::res://Orden de capas/(1) - Fondo_Estrellas.png<>uid://dylneryxv7jn3::::res://Orden de capas/(2) - Fondo_Estrellas.png<>uid://b6u2fpfyiolbx::::res://Orden de capas/(3) - Fondo_Luna.png<>uid://cniwouvrp5u5r::::res://Orden de capas/(4) - Fondo_Estrellas.png<>uid://cp7pqbkwdlgvh::::res://Orden de capas/(5) - Edificios.png<>uid://cpgx8a7qccd6r::::res://Orden de capas/(6) - Edificios.png<>uid://0fu6ee3lj4y0::::res://Orden de capas/(7) - Edificios.png<>uid://caa820ka51h6p::::res://Orden de capas/(8) - Edificios.png<>uid://bkgcbhbqrb3gt::::res://Orden de capas/(9) - PrimerPlano_Vereda.png<>uid://pq10pq0wf22n::::res://Orden de capas/(10) - PrimerPlano_Faros.png
+capa_0.gd::GDScript::8911657314645517215::1751046398::0::1::::<>ParallaxBackground<><>0<>0<><>::
+::res://Escenas Juegos/EscenaExit/::1751043646
+escena_exit.tscn::PackedScene/PackedScene::3488610669314824415::1751043646::0::1::::<><><>0<>0<><>::
+::res://Escenas Juegos/EscenaMenu/::1751047340
+menu.tscn::PackedScene::8915732129246096308::1751047340::0::1::::<><><>0<>0<><>::uid://dexovbgomwb8l::::res://ScripsMenu/ScriptMenu.gd
+::res://Escenas Juegos/EscenaNuevoJuego/::1751043646
+escena_nuevo_juego.tscn::PackedScene/PackedScene::3093326555062488468::1751043646::0::1::::<><><>0<>0<><>::
+::res://Escenas Juegos/EscenasSettings/::1751043646
+escena_settings.tscn::PackedScene/PackedScene::8121213189455921076::1751043646::0::1::::<><><>0<>0<><>::
+::res://Orden de capas/::1751043682
+(0) - Fondo_ColorPlano.png::CompressedTexture2D/CompressedTexture2D::3684343975101661727::1751043646::1751043681::1::::<><><>0<>0<>9a666b0e1c361c8e087a23880a7cea4a<>res://.godot/imported/(0) - Fondo_ColorPlano.png-08278a866d3ef58c7c0ad9bbd89f041d.ctex::
+(1) - Fondo_Estrellas.png::CompressedTexture2D/CompressedTexture2D::8230434274310024873::1751043646::1751043680::1::::<><><>0<>0<>a0cbfc64f54afa2123b4c2ecde0e4303<>res://.godot/imported/(1) - Fondo_Estrellas.png-ad63623928b125d960db08586e968881.ctex::
+(2) - Fondo_Estrellas.png::CompressedTexture2D/CompressedTexture2D::8867299848814926378::1751043646::1751043680::1::::<><><>0<>0<>5bf29c140a1703c01fc73227f7fa16ca<>res://.godot/imported/(2) - Fondo_Estrellas.png-38020f4d1be0bbb69035a12b58ae0b64.ctex::
+(3) - Fondo_Luna.png::CompressedTexture2D/CompressedTexture2D::4605211476003497621::1751043646::1751043681::1::::<><><>0<>0<>0c7621dee0b99dc56e6944f4f9ebf64f<>res://.godot/imported/(3) - Fondo_Luna.png-b95b48847a411af3c21a259f0cef5b03.ctex::
+(4) - Fondo_Estrellas.png::CompressedTexture2D/CompressedTexture2D::5703173215370178205::1751043646::1751043681::1::::<><><>0<>0<>e94c0216bffac45e4c5ef5ff42dbc319<>res://.godot/imported/(4) - Fondo_Estrellas.png-ad8648dee1f7e030f1119cf8e8b1e84a.ctex::
+(5) - Edificios.png::CompressedTexture2D/CompressedTexture2D::5892673506655998641::1751043646::1751043681::1::::<><><>0<>0<>5521aea5f8b174a6b2e5b82e74747728<>res://.godot/imported/(5) - Edificios.png-b8332a9524a413ee7a54af99f264f88d.ctex::
+(6) - Edificios.png::CompressedTexture2D/CompressedTexture2D::5839515760677000683::1751043646::1751043681::1::::<><><>0<>0<>bd2e54050deb4270f627bb5f586c42d5<>res://.godot/imported/(6) - Edificios.png-7a2875e59309412c1e30f20dab785a74.ctex::
+(7) - Edificios.png::CompressedTexture2D/CompressedTexture2D::1766312896747387445::1751043646::1751043682::1::::<><><>0<>0<>d1f14a8147eeb6a5e1eb61a4e8b79bb1<>res://.godot/imported/(7) - Edificios.png-7da3fe3947f912051a057e1efbb06c8e.ctex::
+(8) - Edificios.png::CompressedTexture2D/CompressedTexture2D::4774894573155846521::1751043646::1751043682::1::::<><><>0<>0<>ec819d5d88aaea33d52fe05c31876d63<>res://.godot/imported/(8) - Edificios.png-4b2df9a12fe240451846d93d3549a67a.ctex::
+(9) - PrimerPlano_Vereda.png::CompressedTexture2D/CompressedTexture2D::3100818976335233191::1751043646::1751043682::1::::<><><>0<>0<>ae369072caad3e12523cade3ab8207a0<>res://.godot/imported/(9) - PrimerPlano_Vereda.png-e8ebf055dd6d4fea47615eed8dbe5ea9.ctex::
+(10) - PrimerPlano_Faros.png::CompressedTexture2D/CompressedTexture2D::1087486799027629111::1751043646::1751043682::1::::<><><>0<>0<>273ec32ae1e3f89cdd918bc64edf37ac<>res://.godot/imported/(10) - PrimerPlano_Faros.png-f2934fb7f8a29897122588627192ae65.ctex::
+::res://ScripsMenu/::1751043646
+ScriptMenu.gd::GDScript/GDScript::7488385715990716449::1751043646::0::1::::<>Control<><>0<>0<><>::
+::res://Sword/::1751047789
+Sword.png::CompressedTexture2D::7047648491166175720::1751047789::1751047789::1::::<><><>0<>0<>142970c448241c412925103347e1a319<>res://.godot/imported/Sword.png-befd01f1c4150c75f19de674373e4b84.ctex::
+::res://Sword/eg/::1751047789
+>>>>>>> Stashed changes

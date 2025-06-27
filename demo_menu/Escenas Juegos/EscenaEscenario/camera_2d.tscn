@@ -14,11 +14,21 @@
 [ext_resource type="Texture2D" uid="uid://pq10pq0wf22n" path="res://Orden de capas/(10) - PrimerPlano_Faros.png" id="11_w5mtu"]
 
 [node name="Camera2D" type="Camera2D"]
+<<<<<<< Updated upstream
+=======
+position = Vector2(77, 554)
+enabled = false
+limit_left = 1
+>>>>>>> Stashed changes
 
 [node name="capa 0" type="ParallaxBackground" parent="."]
 script = ExtResource("1_67uq1")
 
 [node name="Fondo" type="ParallaxLayer" parent="capa 0"]
+<<<<<<< Updated upstream
+=======
+position = Vector2(-577, -1395)
+>>>>>>> Stashed changes
 motion_scale = Vector2(0.1, 0.1)
 
 [node name="fondoPlano" type="Sprite2D" parent="capa 0/Fondo"]
@@ -28,6 +38,10 @@ texture = ExtResource("1_ye73j")
 metadata/_edit_lock_ = true
 
 [node name="ParallaxLayer" type="ParallaxLayer" parent="capa 0"]
+<<<<<<< Updated upstream
+=======
+position = Vector2(2, -1060)
+>>>>>>> Stashed changes
 motion_scale = Vector2(0.2, 0.2)
 
 [node name="estrella 1" type="Sprite2D" parent="capa 0/ParallaxLayer"]
@@ -37,6 +51,10 @@ texture = ExtResource("2_wv5v7")
 metadata/_edit_lock_ = true
 
 [node name="ParallaxLayer2" type="ParallaxLayer" parent="capa 0"]
+<<<<<<< Updated upstream
+=======
+position = Vector2(2, -1060)
+>>>>>>> Stashed changes
 motion_scale = Vector2(0.3, 0.3)
 
 [node name="Sprite2D" type="Sprite2D" parent="capa 0/ParallaxLayer2"]
@@ -46,6 +64,10 @@ texture = ExtResource("3_7do3u")
 metadata/_edit_lock_ = true
 
 [node name="ParallaxLayer3" type="ParallaxLayer" parent="capa 0"]
+<<<<<<< Updated upstream
+=======
+position = Vector2(2, -1060)
+>>>>>>> Stashed changes
 motion_scale = Vector2(0.4, 0.4)
 
 [node name="Sprite2D" type="Sprite2D" parent="capa 0/ParallaxLayer3"]
@@ -55,6 +77,10 @@ texture = ExtResource("4_05l6m")
 metadata/_edit_lock_ = true
 
 [node name="ParallaxLayer4" type="ParallaxLayer" parent="capa 0"]
+<<<<<<< Updated upstream
+=======
+position = Vector2(2, -1060)
+>>>>>>> Stashed changes
 motion_scale = Vector2(0.5, 0.5)
 
 [node name="Sprite2D" type="Sprite2D" parent="capa 0/ParallaxLayer4"]
@@ -64,6 +90,10 @@ texture = ExtResource("5_27fwu")
 metadata/_edit_lock_ = true
 
 [node name="ParallaxLayer5" type="ParallaxLayer" parent="capa 0"]
+<<<<<<< Updated upstream
+=======
+position = Vector2(2, -1060)
+>>>>>>> Stashed changes
 motion_scale = Vector2(0.6, 0.6)
 
 [node name="Sprite2D" type="Sprite2D" parent="capa 0/ParallaxLayer5"]
@@ -73,6 +103,10 @@ texture = ExtResource("6_hv1e7")
 metadata/_edit_lock_ = true
 
 [node name="ParallaxLayer6" type="ParallaxLayer" parent="capa 0"]
+<<<<<<< Updated upstream
+=======
+position = Vector2(2, -1060)
+>>>>>>> Stashed changes
 motion_scale = Vector2(0.7, 0.7)
 
 [node name="Sprite2D" type="Sprite2D" parent="capa 0/ParallaxLayer6"]
@@ -82,6 +116,10 @@ texture = ExtResource("7_ojfco")
 metadata/_edit_lock_ = true
 
 [node name="ParallaxLayer7" type="ParallaxLayer" parent="capa 0"]
+<<<<<<< Updated upstream
+=======
+position = Vector2(2, -1060)
+>>>>>>> Stashed changes
 motion_scale = Vector2(0.8, 0.8)
 
 [node name="Sprite2D" type="Sprite2D" parent="capa 0/ParallaxLayer7"]
@@ -91,6 +129,10 @@ texture = ExtResource("8_np8ou")
 metadata/_edit_lock_ = true
 
 [node name="ParallaxLayer8" type="ParallaxLayer" parent="capa 0"]
+<<<<<<< Updated upstream
+=======
+position = Vector2(2, -1060)
+>>>>>>> Stashed changes
 motion_scale = Vector2(0.9, 0.9)
 
 [node name="Sprite2D" type="Sprite2D" parent="capa 0/ParallaxLayer8"]
@@ -100,6 +142,11 @@ texture = ExtResource("9_gtoxh")
 metadata/_edit_lock_ = true
 
 [node name="ParallaxLayer9" type="ParallaxLayer" parent="capa 0"]
+<<<<<<< Updated upstream
+=======
+position = Vector2(2, -1060)
+motion_mirroring = Vector2(3840, 0)
+>>>>>>> Stashed changes
 
 [node name="Sprite2D" type="Sprite2D" parent="capa 0/ParallaxLayer9"]
 position = Vector2(575.222, 318.5)
@@ -108,6 +155,10 @@ texture = ExtResource("10_awc5b")
 metadata/_edit_lock_ = true
 
 [node name="ParallaxLayer10" type="ParallaxLayer" parent="capa 0"]
+<<<<<<< Updated upstream
+=======
+position = Vector2(2, -1060)
+>>>>>>> Stashed changes
 motion_scale = Vector2(1.1, 1.1)
 
 [node name="Sprite2D" type="Sprite2D" parent="capa 0/ParallaxLayer10"]
