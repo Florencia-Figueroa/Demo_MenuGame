@@ -11,8 +11,14 @@ config_version=5
 [application]
 
 config/name="Demo_Menu"
+run/main_scene="uid://mromr2gyoifl"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 config/icon="res://icon.svg"
+
+[display]
+
+window/size/viewport_width=3840
+window/size/viewport_height=2160
 
 [rendering]
 

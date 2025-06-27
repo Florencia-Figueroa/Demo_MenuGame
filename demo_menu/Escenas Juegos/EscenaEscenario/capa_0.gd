@@ -9,7 +9,7 @@ var current_offset: Vector2 = Vector2.ZERO
 
 func _ready():
 	# Asegúrate de que el ratón esté visible si lo necesitas, o invisible si es solo para parallax
-	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED) # O Input.MOUSE_MODE_VISIBLE si quieres ver el cursor
+	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED) # O 
 
 func _input(event):
 	if event is InputEventMouseMotion:

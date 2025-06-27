@@ -1,4 +1,3 @@
 res://Escenas Juegos/EscenaEscenario/camera_2d.tscn
-res://Escenas Juegos/EscenaEscenario/capa_0.gd
-res://ScripsMenu/ScriptMenu.gd
 res://Escenas Juegos/EscenaMenu/menu.tscn
+res://Escenas Juegos/EscenaEscenario/capa_0.gd
