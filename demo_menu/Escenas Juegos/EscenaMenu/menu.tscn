@@ -1,17 +1,17 @@
 [gd_scene load_steps=6 format=3 uid="uid://d0a32nh5cem7e"]
 
-[ext_resource type="Script" uid="uid://dexovbgomwb8l" path="res://ScripsMenu/ScriptMenu.gd" id="1_ptfah"]
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vsb4k"]
-bg_color = Color(0.242852, 0.0911862, 0.502377, 1)
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lti8b"]
-bg_color = Color(0.243137, 0.0901961, 0.501961, 1)
+[ext_resource type="Script" uid="uid://dercfb14sxo" path="res://Escenas Juegos/EscenaMenu/menu.gd" id="1_fwmgo"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ouk20"]
 bg_color = Color(0.243137, 0.0901961, 0.501961, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mae5d"]
+bg_color = Color(0.243137, 0.0901961, 0.501961, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vsb4k"]
+bg_color = Color(0.242852, 0.0911862, 0.502377, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lti8b"]
 bg_color = Color(0.243137, 0.0901961, 0.501961, 1)
 
 [node name="Menu" type="Control"]
@@ -24,19 +24,35 @@ anchor_bottom = 0.5
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 4
-script = ExtResource("1_ptfah")
+script = ExtResource("1_fwmgo")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 0
+offset_left = -208.0
+offset_top = 269.0
+offset_right = 174.0
+offset_bottom = 338.0
+scale = Vector2(1.48, 1.48)
+theme_override_constants/separation = 100
+
+[node name="B-exit" type="Button" parent="HBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_ouk20")
+text = "Exit"
+
+[node name="B-settings" type="Button" parent="HBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_mae5d")
+text = "Settings"
 
 [node name="Contenedor botones" type="VBoxContainer" parent="."]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -219.0
-offset_top = -172.0
-offset_right = 219.0
-offset_bottom = 73.0
+layout_mode = 2
+offset_left = -158.0
+offset_top = 61.0
+offset_right = 272.0
+offset_bottom = 232.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/separation = 33
@@ -60,31 +76,7 @@ theme_override_font_sizes/font_size = 50
 theme_override_styles/normal = SubResource("StyleBoxFlat_lti8b")
 text = "Continuar Partida"
 
-[node name="B-exit" type="Button" parent="."]
-layout_mode = 2
-offset_left = 64.0
-offset_top = 156.0
-offset_right = 502.0
-offset_bottom = 233.0
-grow_horizontal = 2
-grow_vertical = 0
-theme_override_font_sizes/font_size = 50
-theme_override_styles/normal = SubResource("StyleBoxFlat_ouk20")
-text = "Exit"
-
-[node name="B-settings" type="Button" parent="."]
-layout_mode = 2
-offset_left = -504.0
-offset_top = 156.0
-offset_right = -66.0
-offset_bottom = 233.0
-grow_horizontal = 2
-grow_vertical = 0
-theme_override_font_sizes/font_size = 50
-theme_override_styles/normal = SubResource("StyleBoxFlat_mae5d")
-text = "Settings"
-
+[connection signal="pressed" from="HBoxContainer/B-exit" to="." method="_on_bexit_pressed"]
+[connection signal="pressed" from="HBoxContainer/B-settings" to="." method="_on_bsettings_pressed"]
 [connection signal="pressed" from="Contenedor botones/B-nuevoJuego" to="." method="_on_bnuevo_juego_pressed"]
 [connection signal="pressed" from="Contenedor botones/B-continuarPartida" to="." method="_on_bcontinuar_partida_pressed"]
-[connection signal="pressed" from="B-exit" to="." method="_on_bexit_pressed"]
-[connection signal="pressed" from="B-settings" to="." method="_on_bsettings_pressed"]

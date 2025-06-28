@@ -1,6 +1,4 @@
 extends Control
-
-
 #Funcion boton nuevo juego:
 func _on_bnuevo_juego_pressed() -> void:
 	get_tree().change_scene_to_file("res://Escenas Juegos/EscenaNuevoJuego/escena_nuevo_juego.tscn")
