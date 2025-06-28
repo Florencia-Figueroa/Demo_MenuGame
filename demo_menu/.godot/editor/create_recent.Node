@@ -1,3 +1,10 @@
+OptionButton
+VBoxContainer
 HBoxContainer
+CanvasLayer
+Camera2D
+Panel
+Label
+Container
 PanelContainer
 Node

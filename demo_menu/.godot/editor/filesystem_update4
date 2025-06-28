@@ -1,5 +1,18 @@
-res://Escenas Juegos/EscenaMenu/menu.tscn
 res://Escenas Juegos/EscenaEscenario/camera_2d.tscn
-res://Escenas Juegos/EscenaEscenario/capa_0.gd
+res://Escenas Juegos/EscenaMenu/menu.tscn
 res://Escenas Juegos/EscenaEscenario/camera_2d.gd
 res://Escenas Juegos/EscenaMenu/menu.gd
+res://Escenas Juegos/EscenaExit/botones de exit.tscn
+res://Escenas Juegos/EscenaExit/botones_de_exit.gd
+res://Escenas Juegos/EscenasSettings/escena setting.tscn
+res://Escenas Juegos/EscenaMenu/escena menu.tscn
+res://Escenas Juegos/EscenaMenu/botones/menu.tscn
+res://Escenas Juegos/EscenaExit/botones/botones de exit.tscn
+res://Escenas menu/EscenaExit/botones/botones de exit.tscn
+res://Escenas menu/EscenaExit/botones/botones_de_exit.gd
+res://Escenas menu/EscenaMenu/botones/menu.gd
+res://Escenas menu/EscenaExit/escena exit.tscn
+res://Escenas menu/EscenasSettings/botones/botones setting.tscn
+res://Escenas menu/EscenaMenu/escena menu.tscn
+res://Escenas menu/EscenaMenu/botones/menu.tscn
+res://Escenas menu/EscenaMenu/botones/resourses/exit.tres
