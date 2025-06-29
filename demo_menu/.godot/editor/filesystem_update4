@@ -1,8 +1,9 @@
-res://Escenas menu/EscenaMenu/botones/menu.tscn
-res://Escenas menu/EscenasSettings/escena setting.tscn
-res://Escenas menu/EscenaNuevoJuego/escena nuevo juego.tscn
 res://Escenas menu/EscenaMenuInicio/escena menu.tscn
-res://camera_2d.gd
-res://ScripsMenu/camera_2d_mov.gd
+res://Escenas menu/EscenaNuevoJuego/escena nuevo juego.tscn
 res://Escenas menu/EscenaContinuarJuego/escena continuar juego.tscn
 res://Escenas menu/EscenaExit/escena exit.tscn
+res://Escenas menu/Esc-ContinuarJuego/escena continuar juego.tscn
+res://Escenas menu/Esc-MenuInicio/escena menu.tscn
+res://Escenas menu/Esc-NuevoJuego/escena nuevo juego.tscn
+res://Escenas menu/Esc-Exit/escena exit.tscn
+res://Escenas menu/Esc-Dificultad/escena dificultad.tscn

@@ -1,0 +1,123 @@
+[gd_scene load_steps=14 format=3 uid="uid://ddv5vqbwcovrw"]
+
+[ext_resource type="Script" uid="uid://b6irslihhd5m3" path="res://Scrips/camera_2d_mov.gd" id="1_u04w2"]
+[ext_resource type="PackedScene" uid="uid://dvhbeqkyefq5d" path="res://Escenas menu/Esc-ContinuarJuego/botones/botones continuar juego.tscn" id="2_44qxj"]
+[ext_resource type="Texture2D" uid="uid://chu185l3ik3px" path="res://capas de escenarios/Escena ciudad lejos - dificultad/(0) fondo.png" id="2_usm74"]
+[ext_resource type="Texture2D" uid="uid://b3pd33mw76p8f" path="res://capas de escenarios/Escena ciudad lejos - dificultad/(1) estrellas 1.png" id="3_taubp"]
+[ext_resource type="Texture2D" uid="uid://cnje45f8r3ng1" path="res://capas de escenarios/escena continuar juego/(0) edificio 1 mas cerca.png" id="5_taubp"]
+[ext_resource type="Texture2D" uid="uid://6r37mnovh7dk" path="res://capas de escenarios/Capas de escenario Ciudad Completa/(6) Estrellas 3.png" id="6_noln5"]
+[ext_resource type="Texture2D" uid="uid://8csfy1jybmvs" path="res://capas de escenarios/escena continuar juego/(1) edificio 2 mas cerca.png" id="7_44qxj"]
+[ext_resource type="Texture2D" uid="uid://dnw8xis3o2136" path="res://capas de escenarios/escena continuar juego/(3) edificio 3 mas cerca.png" id="8_usm74"]
+[ext_resource type="Texture2D" uid="uid://c0i1i01wjt1kw" path="res://capas de escenarios/escena continuar juego/(4) edificio 4 mas cerca.png" id="9_5xgjj"]
+[ext_resource type="Texture2D" uid="uid://sm60xespt8ga" path="res://capas de escenarios/escena continuar juego/(5) vereda suelo y faros mas cerca.png" id="10_hh7co"]
+[ext_resource type="Texture2D" uid="uid://b7sjl7cnml75e" path="res://capas de escenarios/escena continuar juego/(6) piedras 1 mas cerca.png" id="11_b04yn"]
+[ext_resource type="Texture2D" uid="uid://caa5kaeh4amgg" path="res://capas de escenarios/escena continuar juego/(6) piedras 2 mas cerca.png" id="12_noln5"]
+[ext_resource type="Texture2D" uid="uid://dshyoytkg4idt" path="res://capas de escenarios/escena continuar juego/(6) piedras 3 mas cerca.png" id="13_2jdvt"]
+
+[node name="EscenaContinuarJuego" type="Node2D"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(957, 543)
+limit_right = 2000
+limit_bottom = 1085
+script = ExtResource("1_u04w2")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="Camera2D"]
+
+[node name="Escena ContinuarJuego" parent="Camera2D/CanvasLayer" instance=ExtResource("2_44qxj")]
+
+[node name="Capas" type="Node" parent="."]
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="Capas"]
+
+[node name="capa 1" type="ParallaxLayer" parent="Capas/ParallaxBackground"]
+motion_scale = Vector2(0.1, 0.1)
+motion_mirroring = Vector2(1920, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="Capas/ParallaxBackground/capa 1"]
+position = Vector2(3872, 2176)
+rotation = 3.14159
+scale = Vector2(2.02, 2.02)
+texture = ExtResource("2_usm74")
+centered = false
+
+[node name="capa 2" type="ParallaxLayer" parent="Capas/ParallaxBackground"]
+motion_scale = Vector2(0.2, 0.2)
+motion_mirroring = Vector2(1920, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="Capas/ParallaxBackground/capa 2"]
+texture = ExtResource("3_taubp")
+centered = false
+
+[node name="capa 4" type="ParallaxLayer" parent="Capas/ParallaxBackground"]
+motion_scale = Vector2(0.4, 0.4)
+motion_mirroring = Vector2(1920, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="Capas/ParallaxBackground/capa 4"]
+texture = ExtResource("6_noln5")
+centered = false
+
+[node name="capa 5" type="ParallaxLayer" parent="Capas/ParallaxBackground"]
+position = Vector2(-6, 46)
+motion_scale = Vector2(0.5, 0.5)
+motion_mirroring = Vector2(1920, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="Capas/ParallaxBackground/capa 5"]
+texture = ExtResource("5_taubp")
+centered = false
+
+[node name="capa 6" type="ParallaxLayer" parent="Capas/ParallaxBackground"]
+position = Vector2(-6, 46)
+motion_scale = Vector2(0.6, 0.6)
+motion_mirroring = Vector2(1920, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="Capas/ParallaxBackground/capa 6"]
+texture = ExtResource("7_44qxj")
+centered = false
+
+[node name="capa 7" type="ParallaxLayer" parent="Capas/ParallaxBackground"]
+position = Vector2(-6, 46)
+motion_scale = Vector2(0.8, 0.8)
+motion_mirroring = Vector2(1920, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="Capas/ParallaxBackground/capa 7"]
+texture = ExtResource("8_usm74")
+centered = false
+
+[node name="capa 8" type="ParallaxLayer" parent="Capas/ParallaxBackground"]
+motion_mirroring = Vector2(1920, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="Capas/ParallaxBackground/capa 8"]
+texture = ExtResource("9_5xgjj")
+centered = false
+
+[node name="capa 9" type="ParallaxLayer" parent="Capas/ParallaxBackground"]
+motion_scale = Vector2(1.1, 1.1)
+motion_mirroring = Vector2(1920, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="Capas/ParallaxBackground/capa 9"]
+texture = ExtResource("10_hh7co")
+centered = false
+
+[node name="capa 10" type="ParallaxLayer" parent="Capas/ParallaxBackground"]
+motion_mirroring = Vector2(1920, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="Capas/ParallaxBackground/capa 10"]
+texture = ExtResource("11_b04yn")
+centered = false
+
+[node name="capa 11" type="ParallaxLayer" parent="Capas/ParallaxBackground"]
+motion_scale = Vector2(1.3, 1.3)
+motion_mirroring = Vector2(1920, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="Capas/ParallaxBackground/capa 11"]
+texture = ExtResource("12_noln5")
+centered = false
+
+[node name="capa 12" type="ParallaxLayer" parent="Capas/ParallaxBackground"]
+motion_scale = Vector2(1.4, 1.4)
+motion_mirroring = Vector2(1920, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="Capas/ParallaxBackground/capa 12"]
+texture = ExtResource("13_2jdvt")
+centered = false
