@@ -1,0 +1,130 @@
+[gd_scene load_steps=15 format=3 uid="uid://cxw25455dqpmv"]
+
+[ext_resource type="Script" uid="uid://b6irslihhd5m3" path="res://Scrips/camera_2d_mov.gd" id="1_7mrft"]
+[ext_resource type="Texture2D" uid="uid://bsqyuvw064wy6" path="res://capas de escenarios/Capas de escenario ciudad/(0) - Fondo_ColorPlano.png" id="2_5hdtx"]
+[ext_resource type="Texture2D" uid="uid://dpi5bx23x4qnx" path="res://capas de escenarios/Capas de escenario ciudad/(1) - Fondo_Estrellas.png" id="3_uae3u"]
+[ext_resource type="Texture2D" uid="uid://dylneryxv7jn3" path="res://capas de escenarios/Capas de escenario ciudad/(2) - Fondo_Estrellas.png" id="4_lm4xd"]
+[ext_resource type="Texture2D" uid="uid://b6u2fpfyiolbx" path="res://capas de escenarios/Capas de escenario ciudad/(3) - Fondo_Luna.png" id="5_o23n4"]
+[ext_resource type="Texture2D" uid="uid://cniwouvrp5u5r" path="res://capas de escenarios/Capas de escenario ciudad/(4) - Fondo_Estrellas.png" id="6_mhqbh"]
+[ext_resource type="Texture2D" uid="uid://cp7pqbkwdlgvh" path="res://capas de escenarios/Capas de escenario ciudad/(5) - Edificios.png" id="7_hiqnu"]
+[ext_resource type="Texture2D" uid="uid://cpgx8a7qccd6r" path="res://capas de escenarios/Capas de escenario ciudad/(6) - Edificios.png" id="8_vtca2"]
+[ext_resource type="Texture2D" uid="uid://0fu6ee3lj4y0" path="res://capas de escenarios/Capas de escenario ciudad/(7) - Edificios.png" id="9_phfph"]
+[ext_resource type="Texture2D" uid="uid://caa820ka51h6p" path="res://capas de escenarios/Capas de escenario ciudad/(8) - Edificios.png" id="10_ws4mu"]
+[ext_resource type="Texture2D" uid="uid://bkgcbhbqrb3gt" path="res://capas de escenarios/Capas de escenario ciudad/(9) - PrimerPlano_Vereda.png" id="11_dmep8"]
+[ext_resource type="Texture2D" uid="uid://pq10pq0wf22n" path="res://capas de escenarios/Capas de escenario ciudad/(10) - PrimerPlano_Faros.png" id="12_iovjb"]
+[ext_resource type="Texture2D" uid="uid://cthh8igfvk1ir" path="res://assets game/plataforma amarillo.png" id="13_3y8m3"]
+[ext_resource type="Texture2D" uid="uid://b27jr5vb2lfvb" path="res://assets game/plataforma palo amarillo.png" id="14_56elq"]
+
+[node name="Juego" type="Node2D"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(960, 538)
+scale = Vector2(0.774745, 0.484747)
+limit_left = 0
+limit_top = -64
+limit_bottom = 1100
+script = ExtResource("1_7mrft")
+
+[node name="Fondo-Capas" type="Node" parent="."]
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="Fondo-Capas"]
+
+[node name="capa 1" type="ParallaxLayer" parent="Fondo-Capas/ParallaxBackground"]
+motion_mirroring = Vector2(1920, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="Fondo-Capas/ParallaxBackground/capa 1"]
+position = Vector2(0, -304)
+scale = Vector2(1.44, 1.44)
+texture = ExtResource("2_5hdtx")
+centered = false
+
+[node name="capa 2" type="ParallaxLayer" parent="Fondo-Capas/ParallaxBackground"]
+motion_scale = Vector2(0, 0)
+motion_mirroring = Vector2(1920, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="Fondo-Capas/ParallaxBackground/capa 2"]
+texture = ExtResource("3_uae3u")
+centered = false
+
+[node name="capa 3" type="ParallaxLayer" parent="Fondo-Capas/ParallaxBackground"]
+motion_scale = Vector2(0.2, 0.2)
+motion_mirroring = Vector2(1920, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="Fondo-Capas/ParallaxBackground/capa 3"]
+texture = ExtResource("4_lm4xd")
+centered = false
+
+[node name="capa 4" type="ParallaxLayer" parent="Fondo-Capas/ParallaxBackground"]
+motion_scale = Vector2(0.3, 0.3)
+motion_mirroring = Vector2(1920, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="Fondo-Capas/ParallaxBackground/capa 4"]
+texture = ExtResource("5_o23n4")
+centered = false
+
+[node name="capa 5" type="ParallaxLayer" parent="Fondo-Capas/ParallaxBackground"]
+motion_scale = Vector2(0.4, 0.4)
+motion_mirroring = Vector2(1920, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="Fondo-Capas/ParallaxBackground/capa 5"]
+texture = ExtResource("6_mhqbh")
+centered = false
+
+[node name="capa 6" type="ParallaxLayer" parent="Fondo-Capas/ParallaxBackground"]
+motion_scale = Vector2(0.5, 0.5)
+motion_mirroring = Vector2(1920, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="Fondo-Capas/ParallaxBackground/capa 6"]
+texture = ExtResource("7_hiqnu")
+centered = false
+
+[node name="capa 7" type="ParallaxLayer" parent="Fondo-Capas/ParallaxBackground"]
+motion_scale = Vector2(0.6, 0.6)
+motion_mirroring = Vector2(1920, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="Fondo-Capas/ParallaxBackground/capa 7"]
+texture = ExtResource("8_vtca2")
+centered = false
+
+[node name="capa 8" type="ParallaxLayer" parent="Fondo-Capas/ParallaxBackground"]
+motion_scale = Vector2(0.9, 0.9)
+motion_mirroring = Vector2(1920, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="Fondo-Capas/ParallaxBackground/capa 8"]
+texture = ExtResource("9_phfph")
+centered = false
+
+[node name="capa 9" type="ParallaxLayer" parent="Fondo-Capas/ParallaxBackground"]
+motion_mirroring = Vector2(1920, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="Fondo-Capas/ParallaxBackground/capa 9"]
+texture = ExtResource("10_ws4mu")
+centered = false
+
+[node name="capa 10" type="ParallaxLayer" parent="Fondo-Capas/ParallaxBackground"]
+motion_scale = Vector2(1.1, 1.1)
+motion_mirroring = Vector2(1920, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="Fondo-Capas/ParallaxBackground/capa 10"]
+texture = ExtResource("11_dmep8")
+centered = false
+
+[node name="capa 11" type="ParallaxLayer" parent="Fondo-Capas/ParallaxBackground"]
+motion_scale = Vector2(1.1, 1.1)
+motion_mirroring = Vector2(1920, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="Fondo-Capas/ParallaxBackground/capa 11"]
+texture = ExtResource("12_iovjb")
+centered = false
+
+[node name="Plataformas" type="Node" parent="."]
+
+[node name="PlataformaAmarillo" type="Sprite2D" parent="Plataformas"]
+position = Vector2(1192, 544)
+scale = Vector2(0.520001, 0.520001)
+texture = ExtResource("13_3y8m3")
+
+[node name="PlataformaPaloAmarillo" type="Sprite2D" parent="Plataformas"]
+position = Vector2(952, 880)
+scale = Vector2(0.596878, 0.596878)
+texture = ExtResource("14_56elq")

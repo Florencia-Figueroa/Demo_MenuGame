@@ -1,4 +1,18 @@
-[gd_scene format=3 uid="uid://cuhlhy2m24du1"]
+[gd_scene load_steps=4 format=3 uid="uid://cuhlhy2m24du1"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_thmm4"]
+bg_color = Color(0.808306, 0.0879999, 0.663821, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_w7g5a"]
+bg_color = Color(0.243137, 0.0901961, 0.501961, 1)
+
+[sub_resource type="GDScript" id="GDScript_w7g5a"]
+script/source = "extends Button
+
+#Funcion de boton volver:
+func _on_pressed() -> void:
+	get_tree().change_scene_to_file(\"res://Escenas menu/Esc-MenuInicio/escena menu.tscn\")
+"
 
 [node name="Escena dificultad" type="Control"]
 layout_mode = 3
@@ -8,15 +22,74 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
+[node name="E-Dificultad" type="Label" parent="."]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -328.0
+offset_top = -244.0
+offset_right = -140.0
+offset_bottom = -221.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(3.36, 3.36)
+size_flags_vertical = 6
+theme_override_styles/normal = SubResource("StyleBoxFlat_thmm4")
+text = " Selecciones la dificultad"
+
+[node name="B-Volver" type="Button" parent="."]
+texture_filter = 1
+offset_left = 128.0
+offset_top = 896.0
+offset_right = 177.0
+offset_bottom = 919.0
+scale = Vector2(3.39999, 3.39999)
+size_flags_horizontal = 5
+theme_override_styles/normal = SubResource("StyleBoxFlat_w7g5a")
+text = "Volver
+"
+script = SubResource("GDScript_w7g5a")
+
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -296.0
+offset_top = -84.0
+offset_right = -55.0
+offset_bottom = 61.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(2.4, 2.4)
+size_flags_vertical = 6
+theme_override_constants/separation = 20
 
-[node name="Button" type="Button" parent="VBoxContainer"]
+[node name="B-Facil" type="Button" parent="VBoxContainer"]
+texture_filter = 1
 layout_mode = 2
-size_flags_horizontal = 4
+theme_override_styles/normal = SubResource("StyleBoxFlat_w7g5a")
+text = "Facil"
 
-[node name="Button2" type="Button" parent="VBoxContainer"]
+[node name="B-Intermedio" type="Button" parent="VBoxContainer"]
+texture_filter = 1
 layout_mode = 2
-size_flags_horizontal = 4
+size_flags_horizontal = 5
+theme_override_styles/normal = SubResource("StyleBoxFlat_w7g5a")
+text = "Intermedio"
+
+[node name="B-Dificil" type="Button" parent="VBoxContainer"]
+texture_filter = 1
+layout_mode = 2
+size_flags_horizontal = 5
+theme_override_styles/normal = SubResource("StyleBoxFlat_w7g5a")
+text = "Dificil"
+
+[connection signal="pressed" from="B-Volver" to="B-Volver" method="_on_pressed"]

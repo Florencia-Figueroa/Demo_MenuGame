@@ -2,7 +2,6 @@
 
 [ext_resource type="Script" uid="uid://c50esb6djv6ld" path="res://Escenas menu/Esc-Exit/botones/botones_de_exit.gd" id="1_vteya"]
 
-
 [node name="Escena Exit" type="Control"]
 layout_mode = 3
 anchors_preset = 15

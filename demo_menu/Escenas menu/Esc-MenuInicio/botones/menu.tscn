@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://d0a32nh5cem7e"]
+[gd_scene load_steps=6 format=3 uid="uid://d0a32nh5cem7e"]
 
 [ext_resource type="Script" uid="uid://dercfb14sxo" path="res://Escenas menu/Esc-MenuInicio/botones/menu.gd" id="1_26wsh"]
 
@@ -13,9 +13,6 @@ bg_color = Color(0.243137, 0.0901961, 0.501961, 1)
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vsb4k"]
 bg_color = Color(0.242852, 0.0911862, 0.502377, 1)
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lti8b"]
-bg_color = Color(0.243137, 0.0901961, 0.501961, 1)
-
 [node name="Menu" type="Control"]
 layout_mode = 3
 anchors_preset = 8
@@ -23,6 +20,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
+offset_left = -83.0
+offset_top = -17.0
+offset_right = -83.0
+offset_bottom = -17.0
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 4
@@ -35,29 +36,33 @@ offset_top = 44.0
 offset_right = 84.0
 offset_bottom = 113.0
 scale = Vector2(1.48, 1.48)
-theme_override_constants/separation = 100
+theme_override_constants/separation = 20
 
 [node name="B-exit" type="Button" parent="bts_nuevoJugeo and continuarPartida"]
 layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.0
 theme = SubResource("Theme_i31ce")
 theme_override_font_sizes/font_size = 50
 theme_override_styles/normal = SubResource("StyleBoxFlat_ouk20")
-text = "Exit"
+text = "      Exit      "
 
 [node name="B-settings" type="Button" parent="bts_nuevoJugeo and continuarPartida"]
 layout_mode = 2
+size_flags_horizontal = 3
 theme_override_font_sizes/font_size = 50
 theme_override_styles/normal = SubResource("StyleBoxFlat_mae5d")
-text = "Settings"
+text = "  Settings  "
 
 [node name="bts_ settings and exit" type="VBoxContainer" parent="."]
 layout_mode = 2
-offset_left = -248.0
-offset_top = -164.0
-offset_right = 182.0
-offset_bottom = 7.0
+offset_left = -295.0
+offset_top = -162.0
+offset_right = 285.0
+offset_bottom = 38.0
 grow_horizontal = 2
 grow_vertical = 2
+scale = Vector2(1.3, 1.3)
 theme_override_constants/separation = 33
 alignment = 1
 
@@ -71,15 +76,8 @@ theme_override_colors/icon_focus_color = Color(0.301961, 0.235294, 1, 1)
 theme_override_colors/icon_normal_color = Color(0.301961, 0.235294, 1, 1)
 theme_override_font_sizes/font_size = 50
 theme_override_styles/normal = SubResource("StyleBoxFlat_vsb4k")
-text = "Nuevo juego"
-
-[node name="B-continuarPartida" type="Button" parent="bts_ settings and exit"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 50
-theme_override_styles/normal = SubResource("StyleBoxFlat_lti8b")
-text = "Continuar Partida"
+text = "     Iniciar juego     "
 
 [connection signal="pressed" from="bts_nuevoJugeo and continuarPartida/B-exit" to="." method="_on_bexit_pressed"]
 [connection signal="pressed" from="bts_nuevoJugeo and continuarPartida/B-settings" to="." method="_on_bsettings_pressed"]
 [connection signal="pressed" from="bts_ settings and exit/B-nuevoJuego" to="." method="_on_bnuevo_juego_pressed"]
-[connection signal="pressed" from="bts_ settings and exit/B-continuarPartida" to="." method="_on_bcontinuar_partida_pressed"]

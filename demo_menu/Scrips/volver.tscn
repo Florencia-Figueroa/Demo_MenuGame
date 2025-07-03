@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=3 uid="uid://bryk06h8a5v63"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1gsbf"]
+bg_color = Color(0.243137, 0.0901961, 0.501961, 1)
+
+[sub_resource type="GDScript" id="GDScript_w7g5a"]
+script/source = "extends Button
+
+#Funcion de boton volver:
+func _on_pressed() -> void:
+	get_tree().change_scene_to_file(\"res://Escenas menu/Esc-MenuInicio/escena menu.tscn\")
+"
+
+[node name="Volver" type="Button"]
+texture_filter = 1
+offset_left = 128.0
+offset_top = 896.0
+offset_right = 177.0
+offset_bottom = 919.0
+scale = Vector2(3.39999, 3.39999)
+size_flags_horizontal = 5
+theme_override_styles/normal = SubResource("StyleBoxFlat_1gsbf")
+text = "Volver
+"
+script = SubResource("GDScript_w7g5a")
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]

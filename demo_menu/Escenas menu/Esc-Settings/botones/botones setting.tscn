@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://dnx8gvcy7xr3a"]
+[gd_scene load_steps=6 format=3 uid="uid://dnx8gvcy7xr3a"]
 
 [ext_resource type="Script" uid="uid://nshuq4w4q3e5" path="res://Escenas menu/Esc-Settings/botones/botones_setting.gd" id="1_7ynd1"]
 
@@ -13,6 +13,9 @@ thickness = 6
 [sub_resource type="StyleBoxLine" id="StyleBoxLine_tvksp"]
 color = Color(0.435294, 0.00392157, 0.8, 1)
 thickness = 6
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7ynd1"]
+bg_color = Color(0.243137, 0.0901961, 0.501961, 1)
 
 [node name="Escena Settings" type="Control"]
 layout_mode = 3
@@ -56,10 +59,11 @@ theme_override_styles/slider = SubResource("StyleBoxLine_b37ju")
 theme_override_styles/grabber_area = SubResource("StyleBoxLine_7ynd1")
 theme_override_styles/grabber_area_highlight = SubResource("StyleBoxLine_tvksp")
 
-[node name="back" type="Button" parent="Panel/VBoxContainer"]
+[node name="Volver" type="Button" parent="Panel/VBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 4
 theme_override_font_sizes/font_size = 30
-text = "Back"
+theme_override_styles/normal = SubResource("StyleBoxFlat_7ynd1")
+text = "Volver"
 
-[connection signal="pressed" from="Panel/VBoxContainer/back" to="." method="_on_back_pressed"]
+[connection signal="pressed" from="Panel/VBoxContainer/Volver" to="." method="_on_back_pressed"]

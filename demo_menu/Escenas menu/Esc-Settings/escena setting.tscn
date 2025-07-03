@@ -36,7 +36,7 @@ script = ExtResource("1_5euak")
 script = SubResource("GDScript_2hlf4")
 
 [node name="Fondo" type="ParallaxLayer" parent="Capas/capa 0"]
-position = Vector2(-1304, -168)
+position = Vector2(-304, -168)
 scale = Vector2(0.505529, 0.505529)
 motion_scale = Vector2(0.1, 0.1)
 motion_mirroring = Vector2(3840, 0)
