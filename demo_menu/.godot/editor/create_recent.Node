@@ -1,3 +1,5 @@
+HSlider
+Label
 Sprite2D
 ParallaxLayer
 Node
@@ -9,6 +11,5 @@ VBoxContainer
 HBoxContainer
 CanvasLayer
 Panel
-Label
 Container
 PanelContainer

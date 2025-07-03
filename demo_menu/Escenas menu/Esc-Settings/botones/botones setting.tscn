@@ -1,4 +1,18 @@
-[gd_scene format=3 uid="uid://dnx8gvcy7xr3a"]
+[gd_scene load_steps=5 format=3 uid="uid://dnx8gvcy7xr3a"]
+
+[ext_resource type="Script" uid="uid://nshuq4w4q3e5" path="res://Escenas menu/Esc-Settings/botones/botones_setting.gd" id="1_7ynd1"]
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_b37ju"]
+color = Color(0.615504, 5.6313e-06, 0.40747, 1)
+thickness = 6
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_7ynd1"]
+color = Color(0.435294, 0.00392157, 0.8, 1)
+thickness = 6
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_tvksp"]
+color = Color(0.435294, 0.00392157, 0.8, 1)
+thickness = 6
 
 [node name="Escena Settings" type="Control"]
 layout_mode = 3
@@ -7,6 +21,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_7ynd1")
 
 [node name="Panel" type="Panel" parent="."]
 layout_mode = 1
@@ -29,8 +44,22 @@ offset_top = 288.0
 offset_right = 862.0
 offset_bottom = 488.0
 
-[node name="NuevaPartida1" type="Button" parent="Panel/VBoxContainer"]
+[node name="opciones" type="Label" parent="Panel/VBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 4
 theme_override_font_sizes/font_size = 30
-text = "nufsdivflnvds "
+text = "opciones"
+
+[node name="HSlider" type="HSlider" parent="Panel/VBoxContainer"]
+layout_mode = 2
+theme_override_styles/slider = SubResource("StyleBoxLine_b37ju")
+theme_override_styles/grabber_area = SubResource("StyleBoxLine_7ynd1")
+theme_override_styles/grabber_area_highlight = SubResource("StyleBoxLine_tvksp")
+
+[node name="back" type="Button" parent="Panel/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 30
+text = "Back"
+
+[connection signal="pressed" from="Panel/VBoxContainer/back" to="." method="_on_back_pressed"]

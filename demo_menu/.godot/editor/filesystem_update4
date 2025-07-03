@@ -1,9 +1,8 @@
-res://Escenas menu/EscenaMenuInicio/escena menu.tscn
-res://Escenas menu/EscenaNuevoJuego/escena nuevo juego.tscn
-res://Escenas menu/EscenaContinuarJuego/escena continuar juego.tscn
-res://Escenas menu/EscenaExit/escena exit.tscn
-res://Escenas menu/Esc-ContinuarJuego/escena continuar juego.tscn
+res://Escenas menu/Esc-Settings/botones/botones setting.tscn
 res://Escenas menu/Esc-MenuInicio/escena menu.tscn
-res://Escenas menu/Esc-NuevoJuego/escena nuevo juego.tscn
-res://Escenas menu/Esc-Exit/escena exit.tscn
+res://Escenas menu/Esc-ContinuarJuego/escena continuar juego.tscn
 res://Escenas menu/Esc-Dificultad/escena dificultad.tscn
+res://Escenas menu/Esc-Exit/escena exit.tscn
+res://Escenas menu/Esc-Settings/escena setting.tscn
+res://Escenas menu/Esc-NuevoJuego/escena nuevo juego.tscn
+res://Escenas menu/Esc-Settings/botones/botones_setting.gd

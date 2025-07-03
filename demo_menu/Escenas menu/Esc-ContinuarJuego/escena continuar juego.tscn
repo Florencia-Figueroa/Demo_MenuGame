@@ -18,7 +18,9 @@
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(957, 543)
-limit_right = 2000
+limit_left = -200
+limit_top = -1000
+limit_right = 2150
 limit_bottom = 1085
 script = ExtResource("1_u04w2")
 
