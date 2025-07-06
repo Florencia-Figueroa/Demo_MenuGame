@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://dmvy1rrui15il"]
+[gd_scene load_steps=18 format=3 uid="uid://dmvy1rrui15il"]
 
 [ext_resource type="Script" uid="uid://b6irslihhd5m3" path="res://Scrips/camera_2d_mov.gd" id="1_no71y"]
 [ext_resource type="PackedScene" uid="uid://d0a32nh5cem7e" path="res://Escenas menu/Esc-MenuInicio/botones/menu.tscn" id="1_qggcs"]
@@ -17,7 +17,12 @@
 [ext_resource type="Texture2D" uid="uid://dco4m83u02xst" path="res://capas de escenarios/Capas de escenario Ciudad Completa/(12) Vereda.png" id="15_i50bf"]
 [ext_resource type="Texture2D" uid="uid://dfsc02or4wapn" path="res://capas de escenarios/Capas de escenario Ciudad Completa/(13) Suelo.png" id="16_m0oyt"]
 
+[sub_resource type="GDScript" id="GDScript_dlwf6"]
+script/source = "extends Node2D
+"
+
 [node name="EscenaMenu" type="Node2D"]
+script = SubResource("GDScript_dlwf6")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(912, 408)

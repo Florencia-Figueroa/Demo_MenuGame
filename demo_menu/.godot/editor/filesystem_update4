@@ -1,17 +1,11 @@
-res://Escenas menu/Esc-NuevoJuego/escena nuevo juego.tscn
-res://Escenas menu/Esc-MenuInicio/botones/menu.tscn
-res://Escenas menu/Esc-NuevoJuego/botones/botones nuevo juego.tscn
-res://Escenas menu/Esc-NuevoJuego/botones/botones_nuevo_juego.gd
-res://juego.tscn
-res://Escenas menu/Esc-Dificultad/botones/botones dificultad.tscn
-res://Scrips/volver.gd
-res://Scrips/volver.tscn
-res://Escenas menu/Esc-Dificultad/escena dificultad.tscn
+res://default_bus_layout.tres
+res://audio.tscn
+res://audio.gd
+res://Escenas menu/Esc-MenuInicio/escena_menu.gd
 res://Escenas menu/Esc-MenuInicio/escena menu.tscn
-res://Escenas menu/Esc-Settings/escena setting.tscn
 res://Escena game/juego.tscn
-res://Escenas menu/Esc-ContinuarJuego/escena continuar juego.tscn
-res://Escenas menu/Esc-Settings/botones/botones setting.tscn
-res://Escenas menu/Esc-Settings/botones/botones_setting.gd
-res://Escenas menu/Esc-MenuInicio/botones/menu.gd
-res://Escenas menu/Esc-Exit/botones/botones_de_exit.gd
+res://Escenas menu/Esc-NuevoJuego/escena nuevo juego.tscn
+res://Escena game/juego.gd
+res://control.gd
+res://boton_pausa.gd
+res://boton_pausa.tscn

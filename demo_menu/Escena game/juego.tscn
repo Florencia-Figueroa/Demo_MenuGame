@@ -1,5 +1,6 @@
-[gd_scene load_steps=15 format=3 uid="uid://cxw25455dqpmv"]
+[gd_scene load_steps=17 format=3 uid="uid://cxw25455dqpmv"]
 
+[ext_resource type="Script" uid="uid://o5cpjeed18kq" path="res://Escena game/juego.gd" id="1_5hdtx"]
 [ext_resource type="Script" uid="uid://b6irslihhd5m3" path="res://Scrips/camera_2d_mov.gd" id="1_7mrft"]
 [ext_resource type="Texture2D" uid="uid://bsqyuvw064wy6" path="res://capas de escenarios/Capas de escenario ciudad/(0) - Fondo_ColorPlano.png" id="2_5hdtx"]
 [ext_resource type="Texture2D" uid="uid://dpi5bx23x4qnx" path="res://capas de escenarios/Capas de escenario ciudad/(1) - Fondo_Estrellas.png" id="3_uae3u"]
@@ -14,8 +15,10 @@
 [ext_resource type="Texture2D" uid="uid://pq10pq0wf22n" path="res://capas de escenarios/Capas de escenario ciudad/(10) - PrimerPlano_Faros.png" id="12_iovjb"]
 [ext_resource type="Texture2D" uid="uid://cthh8igfvk1ir" path="res://assets game/plataforma amarillo.png" id="13_3y8m3"]
 [ext_resource type="Texture2D" uid="uid://b27jr5vb2lfvb" path="res://assets game/plataforma palo amarillo.png" id="14_56elq"]
+[ext_resource type="PackedScene" uid="uid://bp3sruobqit4q" path="res://boton_pausa.tscn" id="16_uae3u"]
 
 [node name="Juego" type="Node2D"]
+script = ExtResource("1_5hdtx")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(960, 538)
@@ -128,3 +131,7 @@ texture = ExtResource("13_3y8m3")
 position = Vector2(952, 880)
 scale = Vector2(0.596878, 0.596878)
 texture = ExtResource("14_56elq")
+
+[node name="PanelMenu" type="CanvasLayer" parent="."]
+
+[node name="boton pausa" parent="PanelMenu" instance=ExtResource("16_uae3u")]

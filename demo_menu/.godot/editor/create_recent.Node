@@ -1,4 +1,8 @@
+CanvasLayer
 Button
+HBoxContainer
+Panel
+AudioStreamPlayer
 Node
 Camera2D
 Sprite2D
@@ -9,7 +13,3 @@ HSlider
 Parallax2D
 OptionButton
 VBoxContainer
-HBoxContainer
-CanvasLayer
-Panel
-Container
