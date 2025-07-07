@@ -1,0 +1,40 @@
+[gd_resource type="Theme" load_steps=10 format=3 uid="uid://eks3s53l8eja"]
+
+[ext_resource type="FontFile" uid="uid://bkq7vcpodnbf5" path="res://Escenas menu/Esc-MenuInicio/botones/resourses/The Shape Of Things.otf" id="1_tuo8m"]
+[ext_resource type="Texture2D" uid="uid://bgdwwtdp4ss1o" path="res://assets game/base_boton.png" id="2_tuo8m"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_tuo8m"]
+texture = ExtResource("2_tuo8m")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_111ry"]
+texture = ExtResource("2_tuo8m")
+modulate_color = Color(0.329412, 0.615686, 0.607843, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_v8ivr"]
+texture = ExtResource("2_tuo8m")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_lx66y"]
+texture = ExtResource("2_tuo8m")
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_111ry"]
+color = Color(0.435294, 0.00392157, 0.8, 1)
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_v8ivr"]
+color = Color(0.435294, 0.00392157, 0.8, 1)
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_lx66y"]
+color = Color(0.615686, 0, 0.407843, 1)
+
+[resource]
+Button/font_sizes/font_size = 30
+Button/fonts/font = ExtResource("1_tuo8m")
+Button/styles/disabled = SubResource("StyleBoxTexture_tuo8m")
+Button/styles/focus = null
+Button/styles/hover = SubResource("StyleBoxTexture_111ry")
+Button/styles/normal = SubResource("StyleBoxTexture_v8ivr")
+Button/styles/pressed = SubResource("StyleBoxTexture_lx66y")
+HSlider/styles/grabber_area = SubResource("StyleBoxLine_111ry")
+HSlider/styles/grabber_area_highlight = SubResource("StyleBoxLine_v8ivr")
+HSlider/styles/slider = SubResource("StyleBoxLine_lx66y")
+Label/font_sizes/font_size = 20
+Label/fonts/font = ExtResource("1_tuo8m")

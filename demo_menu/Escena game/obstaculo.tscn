@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://byw7yh0jf58lo"]
+
+[ext_resource type="Texture2D" uid="uid://xoigu6cn83jn" path="res://assets game/obstaculo game.png" id="1_2d8oy"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sx6xr"]
+size = Vector2(96, 848)
+
+[node name="Pipe" type="Area2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_2d8oy")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_sx6xr")

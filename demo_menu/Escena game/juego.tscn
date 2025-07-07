@@ -1,7 +1,7 @@
-[gd_scene load_steps=17 format=3 uid="uid://cxw25455dqpmv"]
+[gd_scene load_steps=18 format=3 uid="uid://cxw25455dqpmv"]
 
-[ext_resource type="Script" uid="uid://o5cpjeed18kq" path="res://Escena game/juego.gd" id="1_5hdtx"]
 [ext_resource type="Script" uid="uid://b6irslihhd5m3" path="res://Scrips/camera_2d_mov.gd" id="1_7mrft"]
+[ext_resource type="Script" uid="uid://5bx41hm3dpuu" path="res://Escena game/nivel.gd" id="1_o23n4"]
 [ext_resource type="Texture2D" uid="uid://bsqyuvw064wy6" path="res://capas de escenarios/Capas de escenario ciudad/(0) - Fondo_ColorPlano.png" id="2_5hdtx"]
 [ext_resource type="Texture2D" uid="uid://dpi5bx23x4qnx" path="res://capas de escenarios/Capas de escenario ciudad/(1) - Fondo_Estrellas.png" id="3_uae3u"]
 [ext_resource type="Texture2D" uid="uid://dylneryxv7jn3" path="res://capas de escenarios/Capas de escenario ciudad/(2) - Fondo_Estrellas.png" id="4_lm4xd"]
@@ -13,12 +13,15 @@
 [ext_resource type="Texture2D" uid="uid://caa820ka51h6p" path="res://capas de escenarios/Capas de escenario ciudad/(8) - Edificios.png" id="10_ws4mu"]
 [ext_resource type="Texture2D" uid="uid://bkgcbhbqrb3gt" path="res://capas de escenarios/Capas de escenario ciudad/(9) - PrimerPlano_Vereda.png" id="11_dmep8"]
 [ext_resource type="Texture2D" uid="uid://pq10pq0wf22n" path="res://capas de escenarios/Capas de escenario ciudad/(10) - PrimerPlano_Faros.png" id="12_iovjb"]
-[ext_resource type="Texture2D" uid="uid://cthh8igfvk1ir" path="res://assets game/plataforma amarillo.png" id="13_3y8m3"]
-[ext_resource type="Texture2D" uid="uid://b27jr5vb2lfvb" path="res://assets game/plataforma palo amarillo.png" id="14_56elq"]
 [ext_resource type="PackedScene" uid="uid://bp3sruobqit4q" path="res://boton_pausa.tscn" id="16_uae3u"]
+[ext_resource type="PackedScene" uid="uid://ditlyidrfnxeu" path="res://Escena game/navecita.tscn" id="17_lm4xd"]
+[ext_resource type="PackedScene" uid="uid://b6jnnv3m68hou" path="res://Escena game/obstaculo final.tscn" id="18_mhqbh"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uae3u"]
+size = Vector2(171, 1153)
 
 [node name="Juego" type="Node2D"]
-script = ExtResource("1_5hdtx")
+script = ExtResource("1_o23n4")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(960, 538)
@@ -31,6 +34,7 @@ script = ExtResource("1_7mrft")
 [node name="Fondo-Capas" type="Node" parent="."]
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="Fondo-Capas"]
+visible = false
 
 [node name="capa 1" type="ParallaxLayer" parent="Fondo-Capas/ParallaxBackground"]
 motion_mirroring = Vector2(1920, 0)
@@ -120,18 +124,125 @@ motion_mirroring = Vector2(1920, 0)
 texture = ExtResource("12_iovjb")
 centered = false
 
-[node name="Plataformas" type="Node" parent="."]
-
-[node name="PlataformaAmarillo" type="Sprite2D" parent="Plataformas"]
-position = Vector2(1192, 544)
-scale = Vector2(0.520001, 0.520001)
-texture = ExtResource("13_3y8m3")
-
-[node name="PlataformaPaloAmarillo" type="Sprite2D" parent="Plataformas"]
-position = Vector2(952, 880)
-scale = Vector2(0.596878, 0.596878)
-texture = ExtResource("14_56elq")
-
 [node name="PanelMenu" type="CanvasLayer" parent="."]
 
 [node name="boton pausa" parent="PanelMenu" instance=ExtResource("16_uae3u")]
+
+[node name="Fondo-Parallax" type="Node2D" parent="."]
+
+[node name="Parallax2D" type="Parallax2D" parent="Fondo-Parallax"]
+repeat_size = Vector2(1920, 0)
+autoscroll = Vector2(-100, 0)
+repeat_times = 3
+
+[node name="color-fondo" type="Sprite2D" parent="Fondo-Parallax/Parallax2D"]
+position = Vector2(960, 544)
+texture = ExtResource("2_5hdtx")
+
+[node name="Parallax2D2" type="Parallax2D" parent="Fondo-Parallax"]
+repeat_size = Vector2(1920, 0)
+autoscroll = Vector2(-120, 0)
+repeat_times = 3
+
+[node name="estrellas" type="Sprite2D" parent="Fondo-Parallax/Parallax2D2"]
+position = Vector2(960, 544)
+texture = ExtResource("3_uae3u")
+
+[node name="Parallax2D3" type="Parallax2D" parent="Fondo-Parallax"]
+repeat_size = Vector2(1920, 0)
+autoscroll = Vector2(-140, 0)
+repeat_times = 3
+
+[node name="estrellas2" type="Sprite2D" parent="Fondo-Parallax/Parallax2D3"]
+position = Vector2(960, 544)
+texture = ExtResource("4_lm4xd")
+
+[node name="Parallax2D4" type="Parallax2D" parent="Fondo-Parallax"]
+repeat_size = Vector2(3840, 0)
+autoscroll = Vector2(-140, 0)
+
+[node name="luna" type="Sprite2D" parent="Fondo-Parallax/Parallax2D4"]
+position = Vector2(960, 544)
+texture = ExtResource("5_o23n4")
+
+[node name="Parallax2D5" type="Parallax2D" parent="Fondo-Parallax"]
+repeat_size = Vector2(1920, 0)
+autoscroll = Vector2(-180, 0)
+repeat_times = 3
+
+[node name="edificios" type="Sprite2D" parent="Fondo-Parallax/Parallax2D5"]
+position = Vector2(960, 544)
+texture = ExtResource("7_hiqnu")
+
+[node name="Parallax2D6" type="Parallax2D" parent="Fondo-Parallax"]
+repeat_size = Vector2(1920, 0)
+autoscroll = Vector2(-220, 0)
+repeat_times = 3
+
+[node name="edificios2" type="Sprite2D" parent="Fondo-Parallax/Parallax2D6"]
+position = Vector2(960, 544)
+texture = ExtResource("8_vtca2")
+
+[node name="Parallax2D7" type="Parallax2D" parent="Fondo-Parallax"]
+repeat_size = Vector2(1920, 0)
+autoscroll = Vector2(-260, 0)
+repeat_times = 3
+
+[node name="edificios3" type="Sprite2D" parent="Fondo-Parallax/Parallax2D7"]
+position = Vector2(960, 544)
+texture = ExtResource("9_phfph")
+
+[node name="Parallax2D8" type="Parallax2D" parent="Fondo-Parallax"]
+repeat_size = Vector2(1920, 0)
+autoscroll = Vector2(-300, 0)
+repeat_times = 3
+
+[node name="edificios4" type="Sprite2D" parent="Fondo-Parallax/Parallax2D8"]
+position = Vector2(960, 544)
+texture = ExtResource("10_ws4mu")
+
+[node name="Parallax2D9" type="Parallax2D" parent="Fondo-Parallax"]
+repeat_size = Vector2(1920, 0)
+autoscroll = Vector2(-100, 0)
+repeat_times = 3
+
+[node name="vereda" type="Sprite2D" parent="Fondo-Parallax/Parallax2D9"]
+position = Vector2(960, 544)
+texture = ExtResource("11_dmep8")
+
+[node name="Parallax2D10" type="Parallax2D" parent="Fondo-Parallax"]
+repeat_size = Vector2(1920, 0)
+autoscroll = Vector2(-100, 0)
+repeat_times = 3
+
+[node name="faros" type="Sprite2D" parent="Fondo-Parallax/Parallax2D10"]
+position = Vector2(960, 544)
+texture = ExtResource("12_iovjb")
+
+[node name="Navecita" parent="." instance=ExtResource("17_lm4xd")]
+position = Vector2(344, 616)
+
+[node name="Node2D" parent="." instance=ExtResource("18_mhqbh")]
+position = Vector2(2456, 408)
+
+[node name="spawn" type="Marker2D" parent="."]
+position = Vector2(2008, 600)
+
+[node name="r1" type="Marker2D" parent="."]
+position = Vector2(2008, 344)
+
+[node name="r2" type="Marker2D" parent="."]
+position = Vector2(2008, 752)
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 1.5
+autostart = true
+
+[node name="Limite" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Limite"]
+position = Vector2(-192, 536)
+shape = SubResource("RectangleShape2D_uae3u")
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="body_entered" from="Limite" to="." method="_on_limite_body_entered"]

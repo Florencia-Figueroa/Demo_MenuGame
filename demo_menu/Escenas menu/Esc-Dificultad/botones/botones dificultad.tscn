@@ -1,4 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://cuhlhy2m24du1"]
+[gd_scene load_steps=11 format=3 uid="uid://cuhlhy2m24du1"]
+
+[ext_resource type="Theme" uid="uid://eks3s53l8eja" path="res://Escenas menu/Esc-MenuInicio/botones/resourses/tema-azul-violeta.tres" id="1_thmm4"]
+[ext_resource type="Texture2D" uid="uid://cj0nwu8ueccwl" path="res://assets game/facil_boton_base.png" id="2_dol27"]
+[ext_resource type="Texture2D" uid="uid://da6kxne4tf0ak" path="res://assets game/dificil_boton_base.png" id="3_qfopf"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_thmm4"]
 bg_color = Color(0.808306, 0.0879999, 0.663821, 1)
@@ -14,6 +18,20 @@ func _on_pressed() -> void:
 	get_tree().change_scene_to_file(\"res://Escenas menu/Esc-MenuInicio/escena menu.tscn\")
 "
 
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_cbyxk"]
+texture = ExtResource("2_dol27")
+modulate_color = Color(0.509804, 0.258824, 0.737255, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_m34ij"]
+texture = ExtResource("2_dol27")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_qpink"]
+texture = ExtResource("3_qfopf")
+modulate_color = Color(0.584314, 0.176471, 0.741176, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_wrryt"]
+texture = ExtResource("3_qfopf")
+
 [node name="Escena dificultad" type="Control"]
 layout_mode = 3
 anchors_preset = 15
@@ -23,26 +41,27 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="E-Dificultad" type="Label" parent="."]
-texture_filter = 1
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -328.0
-offset_top = -244.0
-offset_right = -140.0
-offset_bottom = -221.0
+offset_left = -496.0
+offset_top = -252.0
+offset_right = -196.0
+offset_bottom = -229.0
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(3.36, 3.36)
 size_flags_vertical = 6
+theme = ExtResource("1_thmm4")
 theme_override_styles/normal = SubResource("StyleBoxFlat_thmm4")
 text = " Selecciones la dificultad"
+horizontal_alignment = 1
 
 [node name="B-Volver" type="Button" parent="."]
-texture_filter = 1
+layout_mode = 0
 offset_left = 128.0
 offset_top = 896.0
 offset_right = 177.0
@@ -55,7 +74,6 @@ text = "Volver
 script = SubResource("GDScript_w7g5a")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
-texture_filter = 1
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -63,9 +81,9 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -296.0
-offset_top = -84.0
-offset_right = -55.0
-offset_bottom = 61.0
+offset_top = -87.0
+offset_right = -16.0
+offset_bottom = 64.0
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(2.4, 2.4)
@@ -73,23 +91,23 @@ size_flags_vertical = 6
 theme_override_constants/separation = 20
 
 [node name="B-Facil" type="Button" parent="VBoxContainer"]
-texture_filter = 1
 layout_mode = 2
-theme_override_styles/normal = SubResource("StyleBoxFlat_w7g5a")
+theme = ExtResource("1_thmm4")
+theme_override_styles/hover = SubResource("StyleBoxTexture_cbyxk")
+theme_override_styles/normal = SubResource("StyleBoxTexture_m34ij")
 text = "Facil"
 
 [node name="B-Intermedio" type="Button" parent="VBoxContainer"]
-texture_filter = 1
 layout_mode = 2
 size_flags_horizontal = 5
-theme_override_styles/normal = SubResource("StyleBoxFlat_w7g5a")
+theme = ExtResource("1_thmm4")
 text = "Intermedio"
 
 [node name="B-Dificil" type="Button" parent="VBoxContainer"]
-texture_filter = 1
 layout_mode = 2
 size_flags_horizontal = 5
-theme_override_styles/normal = SubResource("StyleBoxFlat_w7g5a")
+theme_override_styles/hover = SubResource("StyleBoxTexture_qpink")
+theme_override_styles/normal = SubResource("StyleBoxTexture_wrryt")
 text = "Dificil"
 
 [connection signal="pressed" from="B-Volver" to="B-Volver" method="_on_pressed"]
