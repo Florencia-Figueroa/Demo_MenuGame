@@ -1,7 +1,9 @@
-[gd_scene load_steps=3 format=3 uid="uid://bpx554xi2m1bf"]
+[gd_scene load_steps=4 format=3 uid="uid://bpx554xi2m1bf"]
 
 [ext_resource type="Script" uid="uid://c50esb6djv6ld" path="res://Escenas menu/Esc-Exit/botones/botones_de_exit.gd" id="1_vteya"]
 [ext_resource type="Theme" uid="uid://eks3s53l8eja" path="res://Escenas menu/Esc-MenuInicio/botones/resourses/tema-azul-violeta.tres" id="2_yjuir"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_yjuir"]
 
 [node name="Escena Exit" type="Control"]
 layout_mode = 3
@@ -23,25 +25,32 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -287.0
-offset_top = -162.0
-offset_right = 273.0
-offset_bottom = 126.0
+offset_left = -415.0
+offset_top = -202.0
+offset_right = 145.0
+offset_bottom = 86.0
 grow_horizontal = 2
 grow_vertical = 2
+scale = Vector2(1.52, 1.52)
+theme_override_styles/panel = SubResource("StyleBoxEmpty_yjuir")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Panel"]
-layout_mode = 0
-offset_top = 72.0
-offset_right = 560.0
-offset_bottom = 153.0
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -280.0
+offset_top = -26.3158
+offset_right = 280.0
+offset_bottom = 80.6842
+grow_horizontal = 2
 theme_override_constants/separation = 20
 
 [node name="Label" type="Label" parent="Panel/VBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 4
 theme = ExtResource("2_yjuir")
-theme_override_font_sizes/font_size = 30
+theme_override_font_sizes/font_size = 40
 text = "¿Seguro que quieres 
 salir del juego?"
 horizontal_alignment = 1
@@ -53,25 +62,25 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -184.0
-offset_top = -84.0
-offset_right = 184.0
-offset_bottom = -47.0
+offset_left = -395.789
+offset_top = -61.6843
+offset_right = 395.211
+offset_bottom = 38.3157
 grow_horizontal = 2
 grow_vertical = 0
-theme_override_constants/separation = 35
+theme_override_constants/separation = 210
 
 [node name="Volver" type="Button" parent="Panel/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 0
-theme_override_font_sizes/font_size = 30
-text = "Volver"
+theme_override_font_sizes/font_size = 55
+text = " Volver "
 
 [node name="Salir" type="Button" parent="Panel/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 10
-theme_override_font_sizes/font_size = 30
-text = "Salir"
+theme_override_font_sizes/font_size = 55
+text = "   Salir   "
 
 [connection signal="pressed" from="Panel/HBoxContainer/Volver" to="." method="_on_volver_pressed"]
 [connection signal="pressed" from="Panel/HBoxContainer/Salir" to="." method="_on_salir_pressed"]

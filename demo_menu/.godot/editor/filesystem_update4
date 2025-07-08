@@ -1,9 +1,22 @@
-res://Escenas menu/Esc-Dificultad/botones/botones dificultad.tscn
-res://Escenas menu/Esc-MenuInicio/botones/resourses/tema-azul-violeta.tres
 res://Escena game/juego.tscn
+res://Escenas menu/Esc-MenuInicio/botones/resourses/tema-azul-violeta.tres
 res://Escenas menu/Esc-MenuInicio/escena menu.tscn
 res://Escenas menu/Esc-MenuInicio/botones/menu.tscn
 res://Escenas menu/Esc-Settings/botones/botones setting.tscn
-res://Escenas menu/Esc-Dificultad/escena dificultad.tscn
+res://Escenas menu/Esc-Dificultad/botones/botones dificultad.tscn
 res://Escenas menu/Esc-ContinuarJuego/botones/botones continuar juego.tscn
 res://Escenas menu/Esc-ContinuarJuego/escena continuar juego.tscn
+res://Escena game/juego.gd
+res://Escena game/nivel.gd
+res://Escena game/obstaculo.tscn
+res://Scrips/obstaculo_final.gd
+res://Escena game/obstaculo final.tscn
+res://Scrips/camera_2d_mov.gd
+res://Escena game/navecita.tscn
+res://Escenas menu/Esc-ContinuarJuego (sin uso)/escena continuar juego.tscn
+res://Escenas menu/Esc-Dificultad/escena dificultad.tscn
+res://Escenas menu/Esc-Dificultad/botones/botones_dificultad.gd
+res://Scrips/navecita.gd
+res://Escenas menu/Esc-MenuInicio/botones/resourses/exit.tres
+res://Escenas menu/Esc-Exit/botones/botones de exit.tscn
+res://Escenas menu/Esc-Exit/escena exit.tscn

@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
-@export var velocidad_salto = -120
-@export var gravedad = 9.8
+@export var velocidad_salto = -170
+@export var gravedad = 11
 var puedeVolar = true
 
 func _physics_process(delta: float) -> void:

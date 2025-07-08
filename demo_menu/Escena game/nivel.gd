@@ -5,6 +5,8 @@ extends Node2D
 @onready var r2 = $r2
 @onready var spawn = $spawn
 @onready var pipe = preload("res://Escena game/obstaculo final.tscn")
+@onready var menuPausa = $PanelMenu
+var musicaFondo = preload("res://Mareux - The Perfect Girl (Audio).mp3")
 
 #Cuando el timer termina, spawnea un set de obstaculos
 func _on_timer_timeout():
@@ -18,3 +20,16 @@ func _on_timer_timeout():
 #Despawnea los obstaculos
 func _on_limite_body_entered(body: Node2D):
 	body.queue_free() 
+
+func cambiarSonido(unSonido):
+	Audio.stream = unSonido
+	Audio.play()
+
+func _ready():
+	cambiarSonido(musicaFondo)
+	menuPausa.hide()
+
+func _input(event):
+	if event.is_action_pressed("Pausa"):
+		menuPausa.show()
+		

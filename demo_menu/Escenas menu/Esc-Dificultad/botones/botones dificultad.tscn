@@ -1,5 +1,6 @@
-[gd_scene load_steps=11 format=3 uid="uid://cuhlhy2m24du1"]
+[gd_scene load_steps=12 format=3 uid="uid://cuhlhy2m24du1"]
 
+[ext_resource type="Script" uid="uid://djk6u7al3w67u" path="res://Escenas menu/Esc-Dificultad/botones/botones_dificultad.gd" id="1_qfopf"]
 [ext_resource type="Theme" uid="uid://eks3s53l8eja" path="res://Escenas menu/Esc-MenuInicio/botones/resourses/tema-azul-violeta.tres" id="1_thmm4"]
 [ext_resource type="Texture2D" uid="uid://cj0nwu8ueccwl" path="res://assets game/facil_boton_base.png" id="2_dol27"]
 [ext_resource type="Texture2D" uid="uid://da6kxne4tf0ak" path="res://assets game/dificil_boton_base.png" id="3_qfopf"]
@@ -12,10 +13,6 @@ bg_color = Color(0.243137, 0.0901961, 0.501961, 1)
 
 [sub_resource type="GDScript" id="GDScript_w7g5a"]
 script/source = "extends Button
-
-#Funcion de boton volver:
-func _on_pressed() -> void:
-	get_tree().change_scene_to_file(\"res://Escenas menu/Esc-MenuInicio/escena menu.tscn\")
 "
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_cbyxk"]
@@ -39,21 +36,21 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_qfopf")
 
 [node name="E-Dificultad" type="Label" parent="."]
+texture_filter = 1
 layout_mode = 1
-anchors_preset = 8
+anchors_preset = 5
 anchor_left = 0.5
-anchor_top = 0.5
 anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -496.0
-offset_top = -252.0
-offset_right = -196.0
-offset_bottom = -229.0
+offset_left = -608.0
+offset_top = 120.0
+offset_right = -246.0
+offset_bottom = 145.0
 grow_horizontal = 2
-grow_vertical = 2
 scale = Vector2(3.36, 3.36)
+size_flags_horizontal = 4
 size_flags_vertical = 6
 theme = ExtResource("1_thmm4")
 theme_override_styles/normal = SubResource("StyleBoxFlat_thmm4")
@@ -61,53 +58,61 @@ text = " Selecciones la dificultad"
 horizontal_alignment = 1
 
 [node name="B-Volver" type="Button" parent="."]
+texture_filter = 1
 layout_mode = 0
-offset_left = 128.0
-offset_top = 896.0
-offset_right = 177.0
-offset_bottom = 919.0
+offset_left = 88.0
+offset_top = 920.0
+offset_right = 213.0
+offset_bottom = 946.0
 scale = Vector2(3.39999, 3.39999)
-size_flags_horizontal = 5
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 21
 theme_override_styles/normal = SubResource("StyleBoxFlat_w7g5a")
 text = "Volver
 "
 script = SubResource("GDScript_w7g5a")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="."]
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+texture_filter = 1
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -296.0
-offset_top = -87.0
-offset_right = -16.0
-offset_bottom = 64.0
+offset_left = -872.0
+offset_top = -44.0
+offset_right = -248.0
+offset_bottom = -13.0
 grow_horizontal = 2
 grow_vertical = 2
-scale = Vector2(2.4, 2.4)
-size_flags_vertical = 6
+scale = Vector2(2.80706, 2.80706)
 theme_override_constants/separation = 20
 
-[node name="B-Facil" type="Button" parent="VBoxContainer"]
+[node name="B-Facil" type="Button" parent="HBoxContainer"]
 layout_mode = 2
 theme = ExtResource("1_thmm4")
+theme_override_font_sizes/font_size = 25
 theme_override_styles/hover = SubResource("StyleBoxTexture_cbyxk")
 theme_override_styles/normal = SubResource("StyleBoxTexture_m34ij")
-text = "Facil"
+text = "         Facil        "
 
-[node name="B-Intermedio" type="Button" parent="VBoxContainer"]
+[node name="B-Intermedio" type="Button" parent="HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 5
 theme = ExtResource("1_thmm4")
-text = "Intermedio"
+theme_override_font_sizes/font_size = 25
+text = "  Intermedio  "
 
-[node name="B-Dificil" type="Button" parent="VBoxContainer"]
+[node name="B-Dificil" type="Button" parent="HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 5
+theme_override_font_sizes/font_size = 25
 theme_override_styles/hover = SubResource("StyleBoxTexture_qpink")
 theme_override_styles/normal = SubResource("StyleBoxTexture_wrryt")
-text = "Dificil"
+text = "        Dificil       "
 
-[connection signal="pressed" from="B-Volver" to="B-Volver" method="_on_pressed"]
+[connection signal="pressed" from="B-Volver" to="." method="_on_b_volver_pressed"]
+[connection signal="pressed" from="HBoxContainer/B-Facil" to="." method="_on_b_facil_pressed"]
+[connection signal="pressed" from="HBoxContainer/B-Intermedio" to="." method="_on_b_intermedio_pressed"]
+[connection signal="pressed" from="HBoxContainer/B-Dificil" to="." method="_on_b_dificil_pressed"]

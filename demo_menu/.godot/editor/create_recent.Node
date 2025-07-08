@@ -1,3 +1,7 @@
+Panel
+VBoxContainer
+BoxContainer
+HBoxContainer
 CollisionShape2D
 Area2D
 CharacterBody2D
@@ -8,7 +12,3 @@ Parallax2D
 Node2D
 AnimatedSprite2D
 CanvasLayer
-Button
-HBoxContainer
-Panel
-AudioStreamPlayer
