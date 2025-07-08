@@ -114,5 +114,3 @@ text = "        Dificil       "
 
 [connection signal="pressed" from="B-Volver" to="." method="_on_b_volver_pressed"]
 [connection signal="pressed" from="HBoxContainer/B-Facil" to="." method="_on_b_facil_pressed"]
-[connection signal="pressed" from="HBoxContainer/B-Intermedio" to="." method="_on_b_intermedio_pressed"]
-[connection signal="pressed" from="HBoxContainer/B-Dificil" to="." method="_on_b_dificil_pressed"]

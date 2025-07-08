@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://b6jnnv3m68hou"]
 
-[ext_resource type="PackedScene" uid="uid://byw7yh0jf58lo" path="res://Escena Juego/Obstaculos/obstaculo.tscn" id="1_3h8m5"]
-[ext_resource type="Script" uid="uid://y71yco7bbexk" path="res://Scrips/obstaculo_final.gd" id="1_nvhjw"]
+[ext_resource type="PackedScene" uid="uid://byw7yh0jf58lo" path="res://Escena Juego/Obstaculos/obstaculoIndividual.tscn" id="1_3h8m5"]
+[ext_resource type="Script" uid="uid://y71yco7bbexk" path="res://Escena Juego/Obstaculos/obstaculo_final.gd" id="1_nvhjw"]
 
 [node name="Node2D" type="CharacterBody2D"]
 script = ExtResource("1_nvhjw")

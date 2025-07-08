@@ -62,12 +62,13 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -395.789
-offset_top = -61.6843
-offset_right = 395.211
-offset_bottom = 38.3157
+offset_left = -301.053
+offset_top = -66.9474
+offset_right = 489.947
+offset_bottom = 33.0526
 grow_horizontal = 2
 grow_vertical = 0
+scale = Vector2(0.763158, 0.763158)
 theme_override_constants/separation = 210
 
 [node name="Volver" type="Button" parent="Panel/HBoxContainer"]

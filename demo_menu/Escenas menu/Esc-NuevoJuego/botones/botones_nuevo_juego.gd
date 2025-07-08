@@ -5,7 +5,7 @@ func _on_bnueva_partida_pressed() -> void:
 
 
 func _on_bcontinuar_partida_pressed() -> void:
-	get_tree().change_scene_to_file("res://Escena game/juego.tscn")
+	get_tree().change_scene_to_file("res://Escena Juego/Nivel/juego.tscn")
 
 
 func _on_bvolver_pressed() -> void:

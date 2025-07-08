@@ -1,16 +1,14 @@
-res://Escenas menu/Esc-Dificultad/escena dificultad.tscn
+res://Escena Juego/Obstaculos/obstaculos .tscn
 res://Escenas menu/Esc-MenuInicio/botones/resourses/tema-azul-violeta.tres
-res://Escenas menu/Esc-Dificultad/botones/botones dificultad.tscn
-res://Escenas menu/Esc-MenuInicio/escena menu.tscn
-res://Escenas menu/Esc-MenuInicio/botones/menu.tscn
-res://Escenas menu/Esc-Exit/botones/botones de exit.tscn
-res://Escenas menu/Esc-Exit/escena exit.tscn
-res://Escena game/juego.tscn
-res://Escena game/obstaculo.tscn
-res://Escena game/obstaculo final.tscn
-res://Escenas menu/Esc-ContinuarJuego (sin uso)/escena continuar juego.tscn
-res://Escenas menu/Esc-Settings/escena setting.tscn
-res://Nivel/juego.tscn
-res://Escena game/Nivel/juego.tscn
 res://Escena Juego/Nivel/juego.tscn
-res://Escena Juego/Obstaculos/obstaculo.tscn
+res://Escena Juego/Obstaculos/obstaculos.tscn
+res://Escena Juego/Nivel/nivel.gd
+res://Sonido/audio.gd
+res://Escenas menu/Esc-NuevoJuego/escena nuevo juego.tscn
+res://Escenas menu/Esc-NuevoJuego/botones/botones_nuevo_juego.gd
+res://Escenas menu/Esc-Settings/escena setting.tscn
+res://Escenas menu/Esc-Dificultad/botones/botones_dificultad.gd
+res://Escenas menu/Esc-Exit/botones/botones de exit.tscn
+res://Escenas menu/Esc-Settings/botones/botones setting.tscn
+res://Escenas menu/Esc-Dificultad/botones/botones dificultad.tscn
+res://Escenas menu/Esc-Exit/escena exit.tscn
