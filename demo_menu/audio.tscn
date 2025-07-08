@@ -1,8 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://b6rv4m44uwmp5"]
-
-[ext_resource type="Script" uid="uid://c44e88dp6w7dh" path="res://audio.gd" id="1_qc0l7"]
-
-[node name="AudioStreamPlayer" type="AudioStreamPlayer"]
-process_mode = 3
-bus = &"Sonido General"
-script = ExtResource("1_qc0l7")

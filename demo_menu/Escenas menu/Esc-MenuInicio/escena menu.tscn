@@ -33,10 +33,10 @@ script = ExtResource("1_no71y")
 [node name="CanvasLayer" type="CanvasLayer" parent="Camera2D"]
 
 [node name="Menu" parent="Camera2D/CanvasLayer" instance=ExtResource("1_qggcs")]
-offset_left = -304.0
-offset_top = -76.0
-offset_right = -304.0
-offset_bottom = -76.0
+offset_left = -40.0
+offset_top = 52.0
+offset_right = -40.0
+offset_bottom = 52.0
 
 [node name="Capas" type="Node" parent="."]
 

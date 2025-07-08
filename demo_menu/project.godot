@@ -13,11 +13,10 @@ config_version=5
 config/name="Demo_Menu"
 run/main_scene="uid://dmvy1rrui15il"
 config/features=PackedStringArray("4.4", "GL Compatibility")
-config/icon="res://icon.svg"
 
 [autoload]
 
-Audio="*res://audio.tscn"
+Audio="*res://Sonido/audio.tscn"
 
 [display]
 

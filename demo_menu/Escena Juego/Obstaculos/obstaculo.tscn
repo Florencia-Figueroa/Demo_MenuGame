@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://byw7yh0jf58lo"]
+
+[ext_resource type="Texture2D" uid="uid://cthh8igfvk1ir" path="res://assets game/plataforma amarillo.png" id="1_77e0r"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sx6xr"]
+size = Vector2(96, 664)
+
+[node name="Obstaculo" type="Area2D"]
+
+[node name="Flecha2" type="Sprite2D" parent="."]
+position = Vector2(216, -264)
+scale = Vector2(0.425926, 0.425926)
+texture = ExtResource("1_77e0r")
+
+[node name="Flecha" type="Sprite2D" parent="."]
+position = Vector2(208, 64)
+scale = Vector2(0.41202, 0.41202)
+texture = ExtResource("1_77e0r")
+
+[node name="Collision" type="CollisionShape2D" parent="."]
+position = Vector2(0, -92)
+shape = SubResource("RectangleShape2D_sx6xr")

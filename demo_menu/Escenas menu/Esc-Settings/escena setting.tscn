@@ -1,22 +1,18 @@
-[gd_scene load_steps=15 format=3 uid="uid://mromr2gyoifl"]
+[gd_scene load_steps=14 format=3 uid="uid://mromr2gyoifl"]
 
 [ext_resource type="Script" uid="uid://bh5pwpsylys12" path="res://Escenas menu/Esc-Settings/script parallax setting.gd" id="1_5euak"]
 [ext_resource type="PackedScene" uid="uid://dnx8gvcy7xr3a" path="res://Escenas menu/Esc-Settings/botones/botones setting.tscn" id="2_vr05w"]
-[ext_resource type="Texture2D" uid="uid://bsqyuvw064wy6" path="res://capas de escenarios/Capas de escenario ciudad/(0) - Fondo_ColorPlano.png" id="3_etng2"]
-[ext_resource type="Texture2D" uid="uid://dpi5bx23x4qnx" path="res://capas de escenarios/Capas de escenario ciudad/(1) - Fondo_Estrellas.png" id="4_rvj11"]
-[ext_resource type="Texture2D" uid="uid://dylneryxv7jn3" path="res://capas de escenarios/Capas de escenario ciudad/(2) - Fondo_Estrellas.png" id="5_gvld7"]
-[ext_resource type="Texture2D" uid="uid://b6u2fpfyiolbx" path="res://capas de escenarios/Capas de escenario ciudad/(3) - Fondo_Luna.png" id="6_jcaaf"]
-[ext_resource type="Texture2D" uid="uid://cniwouvrp5u5r" path="res://capas de escenarios/Capas de escenario ciudad/(4) - Fondo_Estrellas.png" id="7_jcb2f"]
-[ext_resource type="Texture2D" uid="uid://cp7pqbkwdlgvh" path="res://capas de escenarios/Capas de escenario ciudad/(5) - Edificios.png" id="8_2avp8"]
-[ext_resource type="Texture2D" uid="uid://cpgx8a7qccd6r" path="res://capas de escenarios/Capas de escenario ciudad/(6) - Edificios.png" id="9_3ciwi"]
-[ext_resource type="Texture2D" uid="uid://0fu6ee3lj4y0" path="res://capas de escenarios/Capas de escenario ciudad/(7) - Edificios.png" id="10_tpyun"]
-[ext_resource type="Texture2D" uid="uid://caa820ka51h6p" path="res://capas de escenarios/Capas de escenario ciudad/(8) - Edificios.png" id="11_h0ioj"]
-[ext_resource type="Texture2D" uid="uid://bkgcbhbqrb3gt" path="res://capas de escenarios/Capas de escenario ciudad/(9) - PrimerPlano_Vereda.png" id="12_mw0e7"]
-[ext_resource type="Texture2D" uid="uid://pq10pq0wf22n" path="res://capas de escenarios/Capas de escenario ciudad/(10) - PrimerPlano_Faros.png" id="13_xfdnb"]
-
-[sub_resource type="GDScript" id="GDScript_2hlf4"]
-script/source = "extends ParallaxBackground
-"
+[ext_resource type="Texture2D" uid="uid://chu185l3ik3px" path="res://capas de escenarios/Escena ciudad lejos - dificultad/(0) fondo.png" id="3_px5hr"]
+[ext_resource type="Texture2D" uid="uid://b3pd33mw76p8f" path="res://capas de escenarios/Escena ciudad lejos - dificultad/(1) estrellas 1.png" id="4_p8auy"]
+[ext_resource type="Texture2D" uid="uid://6r37mnovh7dk" path="res://capas de escenarios/Capas de escenario Ciudad Completa/(6) Estrellas 3.png" id="5_6k3bp"]
+[ext_resource type="Texture2D" uid="uid://cnje45f8r3ng1" path="res://capas de escenarios/escena continuar juego/(0) edificio 1 mas cerca.png" id="6_ollyb"]
+[ext_resource type="Texture2D" uid="uid://8csfy1jybmvs" path="res://capas de escenarios/escena continuar juego/(1) edificio 2 mas cerca.png" id="7_32iy2"]
+[ext_resource type="Texture2D" uid="uid://dnw8xis3o2136" path="res://capas de escenarios/escena continuar juego/(3) edificio 3 mas cerca.png" id="8_88qby"]
+[ext_resource type="Texture2D" uid="uid://c0i1i01wjt1kw" path="res://capas de escenarios/escena continuar juego/(4) edificio 4 mas cerca.png" id="9_oy1lt"]
+[ext_resource type="Texture2D" uid="uid://sm60xespt8ga" path="res://capas de escenarios/escena continuar juego/(5) vereda suelo y faros mas cerca.png" id="10_83nlg"]
+[ext_resource type="Texture2D" uid="uid://b7sjl7cnml75e" path="res://capas de escenarios/escena continuar juego/(6) piedras 1 mas cerca.png" id="11_sxxkk"]
+[ext_resource type="Texture2D" uid="uid://caa5kaeh4amgg" path="res://capas de escenarios/escena continuar juego/(6) piedras 2 mas cerca.png" id="12_ule1m"]
+[ext_resource type="Texture2D" uid="uid://dshyoytkg4idt" path="res://capas de escenarios/escena continuar juego/(6) piedras 3 mas cerca.png" id="13_bd3c5"]
 
 [node name="Camera2D" type="Camera2D"]
 anchor_mode = 0
@@ -30,146 +26,98 @@ script = ExtResource("1_5euak")
 
 [node name="Escena Settings" parent="CanvasLayer" instance=ExtResource("2_vr05w")]
 
-[node name="Capas" type="Node" parent="."]
+[node name="Fondo settings" type="Node" parent="."]
 
-[node name="capa 0" type="ParallaxBackground" parent="Capas"]
-script = SubResource("GDScript_2hlf4")
+[node name="ParallaxBackground" type="ParallaxBackground" parent="Fondo settings"]
 
-[node name="Fondo" type="ParallaxLayer" parent="Capas/capa 0"]
-position = Vector2(-304, -168)
-scale = Vector2(0.505529, 0.505529)
+[node name="capa 1" type="ParallaxLayer" parent="Fondo settings/ParallaxBackground"]
 motion_scale = Vector2(0.1, 0.1)
-motion_mirroring = Vector2(3840, 0)
+motion_mirroring = Vector2(1920, 0)
 
-[node name="fondoPlano" type="Sprite2D" parent="Capas/capa 0/Fondo"]
-position = Vector2(574, 326)
-scale = Vector2(2, 2)
-texture = ExtResource("3_etng2")
+[node name="Sprite2D" type="Sprite2D" parent="Fondo settings/ParallaxBackground/capa 1"]
+position = Vector2(3872, 2176)
+rotation = 3.14159
+scale = Vector2(2.02, 2.02)
+texture = ExtResource("3_px5hr")
 centered = false
-metadata/_edit_lock_ = true
 
-[node name="fondoPlano2" type="Sprite2D" parent="Capas/capa 0/Fondo"]
-position = Vector2(574, 326)
-scale = Vector2(2, 2)
-texture = ExtResource("3_etng2")
-centered = false
-metadata/_edit_lock_ = true
-
-[node name="ParallaxLayer" type="ParallaxLayer" parent="Capas/capa 0"]
-position = Vector2(9, 4)
-scale = Vector2(0.505529, 0.505529)
+[node name="capa 2" type="ParallaxLayer" parent="Fondo settings/ParallaxBackground"]
 motion_scale = Vector2(0.2, 0.2)
-motion_mirroring = Vector2(1.001, 0)
+motion_mirroring = Vector2(1920, 0)
 
-[node name="estrella 1" type="Sprite2D" parent="Capas/capa 0/ParallaxLayer"]
-position = Vector2(10, 7)
-scale = Vector2(2, 2)
-texture = ExtResource("4_rvj11")
+[node name="Sprite2D" type="Sprite2D" parent="Fondo settings/ParallaxBackground/capa 2"]
+texture = ExtResource("4_p8auy")
 centered = false
 
-[node name="ParallaxLayer2" type="ParallaxLayer" parent="Capas/capa 0"]
-position = Vector2(9, 4)
-scale = Vector2(0.505529, 0.505529)
-motion_scale = Vector2(0.3, 0.3)
-motion_mirroring = Vector2(3840, 0)
-
-[node name="Sprite2D" type="Sprite2D" parent="Capas/capa 0/ParallaxLayer2"]
-position = Vector2(-6, 0)
-scale = Vector2(2, 2)
-texture = ExtResource("5_gvld7")
-centered = false
-
-[node name="ParallaxLayer3" type="ParallaxLayer" parent="Capas/capa 0"]
-position = Vector2(9, 4)
-scale = Vector2(0.505529, 0.505529)
+[node name="capa 4" type="ParallaxLayer" parent="Fondo settings/ParallaxBackground"]
 motion_scale = Vector2(0.4, 0.4)
-motion_mirroring = Vector2(3840, 0)
+motion_mirroring = Vector2(1920, 0)
 
-[node name="Sprite2D" type="Sprite2D" parent="Capas/capa 0/ParallaxLayer3"]
-position = Vector2(5, 7)
-scale = Vector2(2, 2)
-texture = ExtResource("6_jcaaf")
+[node name="Sprite2D" type="Sprite2D" parent="Fondo settings/ParallaxBackground/capa 4"]
+texture = ExtResource("5_6k3bp")
 centered = false
 
-[node name="ParallaxLayer4" type="ParallaxLayer" parent="Capas/capa 0"]
-position = Vector2(9, 4)
-scale = Vector2(0.505529, 0.505529)
+[node name="capa 5" type="ParallaxLayer" parent="Fondo settings/ParallaxBackground"]
+position = Vector2(-6, 46)
 motion_scale = Vector2(0.5, 0.5)
-motion_mirroring = Vector2(3840, 0)
+motion_mirroring = Vector2(1920, 0)
 
-[node name="Sprite2D" type="Sprite2D" parent="Capas/capa 0/ParallaxLayer4"]
-position = Vector2(-8, -9)
-scale = Vector2(2, 2)
-texture = ExtResource("7_jcb2f")
+[node name="Sprite2D" type="Sprite2D" parent="Fondo settings/ParallaxBackground/capa 5"]
+texture = ExtResource("6_ollyb")
 centered = false
 
-[node name="ParallaxLayer5" type="ParallaxLayer" parent="Capas/capa 0"]
-position = Vector2(9, 4)
-scale = Vector2(0.505529, 0.505529)
+[node name="capa 6" type="ParallaxLayer" parent="Fondo settings/ParallaxBackground"]
+position = Vector2(-6, 46)
 motion_scale = Vector2(0.6, 0.6)
-motion_mirroring = Vector2(3840, 0)
+motion_mirroring = Vector2(1920, 0)
 
-[node name="Sprite2D" type="Sprite2D" parent="Capas/capa 0/ParallaxLayer5"]
-position = Vector2(0, 11)
-scale = Vector2(2, 2)
-texture = ExtResource("8_2avp8")
+[node name="Sprite2D" type="Sprite2D" parent="Fondo settings/ParallaxBackground/capa 6"]
+texture = ExtResource("7_32iy2")
 centered = false
 
-[node name="ParallaxLayer6" type="ParallaxLayer" parent="Capas/capa 0"]
-position = Vector2(9, 4)
-scale = Vector2(0.505529, 0.505529)
-motion_scale = Vector2(0.7, 0.7)
-motion_mirroring = Vector2(3840, 0)
-
-[node name="Sprite2D" type="Sprite2D" parent="Capas/capa 0/ParallaxLayer6"]
-position = Vector2(-25, 11)
-scale = Vector2(2, 2)
-texture = ExtResource("9_3ciwi")
-centered = false
-
-[node name="ParallaxLayer7" type="ParallaxLayer" parent="Capas/capa 0"]
-position = Vector2(9, 4)
-scale = Vector2(0.505529, 0.505529)
+[node name="capa 7" type="ParallaxLayer" parent="Fondo settings/ParallaxBackground"]
+position = Vector2(-6, 46)
 motion_scale = Vector2(0.8, 0.8)
-motion_mirroring = Vector2(3840, 0)
+motion_mirroring = Vector2(1920, 0)
 
-[node name="Sprite2D" type="Sprite2D" parent="Capas/capa 0/ParallaxLayer7"]
-position = Vector2(6, 5)
-scale = Vector2(2, 2)
-texture = ExtResource("10_tpyun")
+[node name="Sprite2D" type="Sprite2D" parent="Fondo settings/ParallaxBackground/capa 7"]
+texture = ExtResource("8_88qby")
 centered = false
 
-[node name="ParallaxLayer8" type="ParallaxLayer" parent="Capas/capa 0"]
-position = Vector2(9, 4)
-scale = Vector2(0.505529, 0.505529)
-motion_scale = Vector2(0.9, 0.9)
-motion_mirroring = Vector2(3840, 0)
+[node name="capa 8" type="ParallaxLayer" parent="Fondo settings/ParallaxBackground"]
+motion_mirroring = Vector2(1920, 0)
 
-[node name="Sprite2D" type="Sprite2D" parent="Capas/capa 0/ParallaxLayer8"]
-position = Vector2(14, -4)
-scale = Vector2(2, 2)
-texture = ExtResource("11_h0ioj")
+[node name="Sprite2D" type="Sprite2D" parent="Fondo settings/ParallaxBackground/capa 8"]
+texture = ExtResource("9_oy1lt")
 centered = false
 
-[node name="ParallaxLayer9" type="ParallaxLayer" parent="Capas/capa 0"]
-position = Vector2(9, 4)
-scale = Vector2(0.505529, 0.505529)
-motion_mirroring = Vector2(3840, 0)
-
-[node name="Sprite2D" type="Sprite2D" parent="Capas/capa 0/ParallaxLayer9"]
-position = Vector2(-11, 9)
-scale = Vector2(2, 2)
-texture = ExtResource("12_mw0e7")
-centered = false
-
-[node name="ParallaxLayer10" type="ParallaxLayer" parent="Capas/capa 0"]
-position = Vector2(9, 4)
-scale = Vector2(0.505529, 0.505529)
+[node name="capa 9" type="ParallaxLayer" parent="Fondo settings/ParallaxBackground"]
 motion_scale = Vector2(1.1, 1.1)
-motion_mirroring = Vector2(3840, 0)
+motion_mirroring = Vector2(1920, 0)
 
-[node name="Sprite2D" type="Sprite2D" parent="Capas/capa 0/ParallaxLayer10"]
-position = Vector2(-5, 0)
-scale = Vector2(2, 2)
-texture = ExtResource("13_xfdnb")
+[node name="Sprite2D" type="Sprite2D" parent="Fondo settings/ParallaxBackground/capa 9"]
+texture = ExtResource("10_83nlg")
+centered = false
+
+[node name="capa 10" type="ParallaxLayer" parent="Fondo settings/ParallaxBackground"]
+motion_mirroring = Vector2(1920, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="Fondo settings/ParallaxBackground/capa 10"]
+texture = ExtResource("11_sxxkk")
+centered = false
+
+[node name="capa 11" type="ParallaxLayer" parent="Fondo settings/ParallaxBackground"]
+motion_scale = Vector2(1.3, 1.3)
+motion_mirroring = Vector2(1920, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="Fondo settings/ParallaxBackground/capa 11"]
+texture = ExtResource("12_ule1m")
+centered = false
+
+[node name="capa 12" type="ParallaxLayer" parent="Fondo settings/ParallaxBackground"]
+motion_scale = Vector2(1.4, 1.4)
+motion_mirroring = Vector2(1920, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="Fondo settings/ParallaxBackground/capa 12"]
+texture = ExtResource("13_bd3c5")
 centered = false

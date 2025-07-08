@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dhtcswny0dque"
+path="res://.godot/imported/End of Line (From TRON_ LegacyScore).mp3-01d335e8464ad544310bdebdbb39bbc4.mp3str"
+
+[deps]
+
+source_file="res://Sonido/End of Line (From TRON_ LegacyScore).mp3"
+dest_files=["res://.godot/imported/End of Line (From TRON_ LegacyScore).mp3-01d335e8464ad544310bdebdbb39bbc4.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
