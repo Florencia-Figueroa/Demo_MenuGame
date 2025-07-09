@@ -142,9 +142,11 @@ texture = ExtResource("15_oy0wr")
 centered = false
 
 [node name="capa 14" type="ParallaxLayer" parent="Capas/ParallaxBackground"]
-motion_scale = Vector2(0, 0)
-motion_mirroring = Vector2(1920, 0)
+motion_scale = Vector2(0.1, 0.1)
+motion_mirroring = Vector2(2064, 0)
 
 [node name="luna y niebla" type="Sprite2D" parent="Capas/ParallaxBackground/capa 14"]
+position = Vector2(-56, -64)
+scale = Vector2(1.075, 1.12593)
 texture = ExtResource("16_paw6v")
 centered = false

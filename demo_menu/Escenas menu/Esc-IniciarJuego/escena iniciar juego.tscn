@@ -1,7 +1,7 @@
 [gd_scene load_steps=18 format=3 uid="uid://c22i2sfip2mpg"]
 
 [ext_resource type="Script" uid="uid://b6irslihhd5m3" path="res://Scrips/camera_2d_mov.gd" id="1_8wc8r"]
-[ext_resource type="PackedScene" uid="uid://bkcovvx5tw8fg" path="res://Escenas menu/Esc-NuevoJuego/botones/botones nuevo juego.tscn" id="2_h8d2l"]
+[ext_resource type="PackedScene" uid="uid://bkcovvx5tw8fg" path="res://Escenas menu/Esc-IniciarJuego/botones/botones nuevo juego.tscn" id="2_h8d2l"]
 [ext_resource type="Texture2D" uid="uid://c2vk0juf35bp0" path="res://capas de escenarios/Capas de escenario Ciudad Completa/(0) FondoColor.png" id="3_1077d"]
 [ext_resource type="Texture2D" uid="uid://duymik6bjpy5o" path="res://capas de escenarios/Capas de escenario Ciudad Completa/(1) Nubes 1.png" id="4_uxpk5"]
 [ext_resource type="Texture2D" uid="uid://ptfbe7640rlt" path="res://capas de escenarios/Capas de escenario Ciudad Completa/(2) Nubes 2.png" id="5_dqoip"]

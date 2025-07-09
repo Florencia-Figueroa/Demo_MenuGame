@@ -53,6 +53,15 @@ size_flags_horizontal = 4
 theme_override_font_sizes/font_size = 80
 text = "opciones"
 
+[node name="volumen" type="Label" parent="Panel"]
+offset_left = 648.0
+offset_top = 320.0
+offset_right = 950.0
+offset_bottom = 380.0
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 50
+text = "volumen"
+
 [node name="Panel" type="Panel" parent="Panel"]
 layout_mode = 1
 anchors_preset = 8
@@ -60,15 +69,16 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -552.0
-offset_top = -200.0
-offset_right = -40.0
-offset_bottom = -136.0
+offset_left = -544.0
+offset_top = -80.0
+offset_right = -32.0
+offset_bottom = -16.0
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(2.14325, 1.48407)
 
 [node name="Regulador de sonido" type="HSlider" parent="Panel/Panel"]
+layout_mode = 0
 offset_left = 48.0
 offset_top = 24.0
 offset_right = 464.0
@@ -76,9 +86,9 @@ offset_bottom = 40.0
 theme_override_styles/slider = SubResource("StyleBoxLine_7ynd1")
 theme_override_styles/grabber_area = SubResource("StyleBoxLine_tvksp")
 theme_override_styles/grabber_area_highlight = SubResource("StyleBoxLine_78pog")
-min_value = -40.0
-max_value = 0.8
-step = 0.5
+max_value = 1.0
+step = 0.05
+value = 1.0
 
 [node name="Volver" type="Button" parent="Panel"]
 layout_mode = 1

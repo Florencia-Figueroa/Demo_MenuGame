@@ -1,41 +1,24 @@
-[gd_scene load_steps=11 format=3 uid="uid://ditlyidrfnxeu"]
+[gd_scene load_steps=7 format=3 uid="uid://ditlyidrfnxeu"]
 
 [ext_resource type="Script" uid="uid://ddx08xou4w23d" path="res://Escena Juego/Nave/navecita.gd" id="1_lq082"]
-[ext_resource type="Texture2D" uid="uid://c18rviuj6momd" path="res://assets game/idle/nave_idle0.png" id="2_r4s32"]
-[ext_resource type="Texture2D" uid="uid://nqxp0apo1c07" path="res://assets game/idle/nave_idle1.png" id="3_xyogt"]
-[ext_resource type="Texture2D" uid="uid://di4md0l1s5jss" path="res://assets game/idle/nave_idle2.png" id="4_kkb80"]
-[ext_resource type="Texture2D" uid="uid://dwnrfoljacmca" path="res://assets game/idle/nave_idle3.png" id="5_r1bsv"]
-[ext_resource type="Texture2D" uid="uid://xhjyfjbl6ser" path="res://assets game/idle/nave_idle4.png" id="6_o7d8w"]
-[ext_resource type="Texture2D" uid="uid://dxd7l1hhde70" path="res://assets game/idle/nave_idle5.png" id="7_pej10"]
-[ext_resource type="Texture2D" uid="uid://v36xv24gg7gf" path="res://assets game/idle/nave_idle6.png" id="8_qb53a"]
-
+[ext_resource type="Texture2D" uid="uid://baa7wbjyqb8yw" path="res://assets game/avanzar/nave_avanzar0002.png" id="4_ng725"]
+[ext_resource type="Texture2D" uid="uid://u4hunxw46tbb" path="res://assets game/avanzar/nave_avanzar0003.png" id="5_x3143"]
+[ext_resource type="Texture2D" uid="uid://26mjux5kvt1u" path="res://assets game/avanzar/nave_avanzar0004.png" id="6_j0vt4"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_jg3kx"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_r4s32")
+"texture": ExtResource("5_x3143")
 }, {
 "duration": 1.0,
-"texture": ExtResource("3_xyogt")
+"texture": ExtResource("6_j0vt4")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_kkb80")
-}, {
-"duration": 1.0,
-"texture": ExtResource("5_r1bsv")
-}, {
-"duration": 1.0,
-"texture": ExtResource("6_o7d8w")
-}, {
-"duration": 1.0,
-"texture": ExtResource("7_pej10")
-}, {
-"duration": 1.0,
-"texture": ExtResource("8_qb53a")
+"texture": ExtResource("4_ng725")
 }],
 "loop": true,
-"name": &"default",
+"name": &"avanzar",
 "speed": 10.0
 }]
 
@@ -48,8 +31,8 @@ script = ExtResource("1_lq082")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_jg3kx")
-frame = 4
-frame_progress = 0.451593
+animation = &"avanzar"
+frame_progress = 0.766648
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-5, -23)

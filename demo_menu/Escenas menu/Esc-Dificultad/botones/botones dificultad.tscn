@@ -38,7 +38,21 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_qfopf")
 
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -624.0
+offset_top = 120.0
+offset_right = 627.0
+offset_bottom = 210.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 75
+text = "Seleccione la dificultad"
+
 [node name="E-Dificultad" type="Label" parent="."]
+visible = false
 texture_filter = 1
 layout_mode = 1
 anchors_preset = 5
@@ -83,7 +97,7 @@ anchor_bottom = 0.5
 offset_left = -872.0
 offset_top = -44.0
 offset_right = -248.0
-offset_bottom = -13.0
+offset_bottom = -4.0
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(2.80706, 2.80706)

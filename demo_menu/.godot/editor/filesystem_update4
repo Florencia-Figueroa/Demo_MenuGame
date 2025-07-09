@@ -1,11 +1,17 @@
 res://Escenas menu/Esc-Settings/escena setting.tscn
 res://Escenas menu/Esc-MenuInicio/botones/resourses/tema-azul-violeta.tres
-res://Escenas menu/Esc-Settings/botones/botones setting.tscn
-res://Escenas menu/Esc-NuevoJuego/botones/botones nuevo juego.tscn
-res://Escenas menu/Esc-NuevoJuego/escena nuevo juego.tscn
-res://Escenas menu/Esc-MenuInicio/escena menu.tscn
-res://Escenas menu/Esc-MenuInicio/botones/menu.tscn
-res://Escena Juego/Nivel/juego.tscn
-res://Sonido/audio.gd
-res://Sonido/audio.tscn
 res://Escenas menu/Esc-Settings/botones/botones_setting.gd
+res://Escenas menu/Esc-Settings/botones/botones setting.tscn
+res://Sonido/audio.tscn
+res://Escenas menu/Esc-MenuInicio/escena menu.tscn
+res://Escena Juego/Nave/navecita.gd
+res://Escenas menu/Esc-MenuInicio/botones/menu.gd
+res://Escenas menu/Esc-MenuInicio/botones/menu.tscn
+res://Escenas menu/Esc-IniciarJuego/botones/botones nuevo juego.tscn
+res://Escenas menu/Esc-Dificultad/botones/botones dificultad.tscn
+res://Escenas menu/Esc-Dificultad/escena dificultad.tscn
+res://Escena Juego/Nave/navecita.tscn
+res://Escena Juego/Nivel/juego.tscn
+res://Escena Juego/Botones/boton_pausa.tscn
+res://Escena Juego/Nivel/nivel.gd
+res://Escena Juego/Botones/boton_pausa.gd

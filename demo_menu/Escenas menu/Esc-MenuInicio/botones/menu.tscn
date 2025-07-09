@@ -37,7 +37,7 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxEmpty_6f80r")
 
-[node name="B-nuevoJuego" type="Button" parent="Panel"]
+[node name="iniciar juego" type="Button" parent="Panel"]
 layout_mode = 2
 offset_left = 138.5
 offset_top = 186.0
@@ -52,7 +52,7 @@ theme_override_colors/icon_normal_color = Color(0.301961, 0.235294, 1, 1)
 theme_override_font_sizes/font_size = 55
 text = "     Iniciar juego     "
 
-[node name="bts_nuevoJugeo and continuarPartida" type="HBoxContainer" parent="Panel"]
+[node name="HBoxContainer" type="HBoxContainer" parent="Panel"]
 layout_mode = 1
 anchors_preset = 7
 anchor_left = 0.5
@@ -67,7 +67,7 @@ grow_horizontal = 2
 grow_vertical = 0
 theme_override_constants/separation = 20
 
-[node name="B-exit" type="Button" parent="Panel/bts_nuevoJugeo and continuarPartida"]
+[node name="exit" type="Button" parent="Panel/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_stretch_ratio = 0.0
@@ -75,7 +75,7 @@ theme = ExtResource("2_bbj5q")
 theme_override_font_sizes/font_size = 50
 text = "         Exit         "
 
-[node name="B-settings" type="Button" parent="Panel/bts_nuevoJugeo and continuarPartida"]
+[node name="settings" type="Button" parent="Panel/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 10
 theme = ExtResource("2_bbj5q")
@@ -87,6 +87,6 @@ position = Vector2(10, -379)
 scale = Vector2(2.04, 2.04)
 texture = ExtResource("3_6f80r")
 
-[connection signal="pressed" from="Panel/B-nuevoJuego" to="." method="_on_bnuevo_juego_pressed"]
-[connection signal="pressed" from="Panel/bts_nuevoJugeo and continuarPartida/B-exit" to="." method="_on_bexit_pressed"]
-[connection signal="pressed" from="Panel/bts_nuevoJugeo and continuarPartida/B-settings" to="." method="_on_bsettings_pressed"]
+[connection signal="pressed" from="Panel/iniciar juego" to="." method="_on_iniciar_juego_pressed"]
+[connection signal="pressed" from="Panel/HBoxContainer/exit" to="." method="_on_exit_pressed"]
+[connection signal="pressed" from="Panel/HBoxContainer/settings" to="." method="_on_settings_pressed"]

@@ -6,8 +6,6 @@ extends Node2D
 @onready var spawn = $spawn
 @onready var pipe = preload("res://Escena Juego/Obstaculos/obstaculos.tscn")
 
-@onready var menuPausa = $PanelMenu
-
 #Cuando el timer termina, spawnea un set de obstaculos
 func _on_timer_timeout():
 	if $Navecita.puedeVolar: 
@@ -21,9 +19,7 @@ func _on_timer_timeout():
 func _on_limite_body_entered(body: Node2D):
 	body.queue_free() 
 
-func _ready():
-	menuPausa.hide()
-
-func _input(event):
-	if event.is_action_pressed("Pausa"):
-		menuPausa.show()
+#func _input(event):
+#	if event.is_action_pressed("Pausa"):
+#		get_tree().paused = true
+#		menuPausa.show()

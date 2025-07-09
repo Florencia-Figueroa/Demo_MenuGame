@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://bkcovvx5tw8fg"]
 
-[ext_resource type="Script" uid="uid://bad2cwr6giub5" path="res://Escenas menu/Esc-NuevoJuego/botones/botones_nuevo_juego.gd" id="1_p7hoc"]
+[ext_resource type="Script" uid="uid://bad2cwr6giub5" path="res://Escenas menu/Esc-IniciarJuego/botones/botones_nuevo_juego.gd" id="1_p7hoc"]
 [ext_resource type="Theme" uid="uid://eks3s53l8eja" path="res://Escenas menu/Esc-MenuInicio/botones/resourses/tema-azul-violeta.tres" id="2_s0eye"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_s0eye"]
