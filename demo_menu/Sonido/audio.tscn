@@ -3,7 +3,7 @@
 [ext_resource type="AudioStream" uid="uid://dhtcswny0dque" path="res://Sonido/End of Line (From TRON_ LegacyScore).mp3" id="1_7rm5i"]
 [ext_resource type="Script" uid="uid://c44e88dp6w7dh" path="res://Sonido/audio.gd" id="1_qc0l7"]
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer"]
+[node name="Musica de fondo" type="AudioStreamPlayer"]
 process_mode = 3
 stream = ExtResource("1_7rm5i")
 autoplay = true

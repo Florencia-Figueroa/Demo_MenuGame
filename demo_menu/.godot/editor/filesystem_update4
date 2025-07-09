@@ -1,10 +1,11 @@
 res://Escenas menu/Esc-Settings/escena setting.tscn
 res://Escenas menu/Esc-MenuInicio/botones/resourses/tema-azul-violeta.tres
 res://Escenas menu/Esc-Settings/botones/botones setting.tscn
-res://Sonido/audio.tscn
 res://Escenas menu/Esc-NuevoJuego/botones/botones nuevo juego.tscn
 res://Escenas menu/Esc-NuevoJuego/escena nuevo juego.tscn
-res://Escenas menu/Esc-MenuInicio/botones/menu.tscn
 res://Escenas menu/Esc-MenuInicio/escena menu.tscn
+res://Escenas menu/Esc-MenuInicio/botones/menu.tscn
 res://Escena Juego/Nivel/juego.tscn
-res://Escena Juego/Nave/navecita.gd
+res://Sonido/audio.gd
+res://Sonido/audio.tscn
+res://Escenas menu/Esc-Settings/botones/botones_setting.gd

@@ -4,15 +4,15 @@
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7ynd1"]
 
-[sub_resource type="StyleBoxLine" id="StyleBoxLine_b37ju"]
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_7ynd1"]
 color = Color(0.615504, 5.6313e-06, 0.40747, 1)
 thickness = 6
 
-[sub_resource type="StyleBoxLine" id="StyleBoxLine_7ynd1"]
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_tvksp"]
 color = Color(0.435294, 0.00392157, 0.8, 1)
 thickness = 6
 
-[sub_resource type="StyleBoxLine" id="StyleBoxLine_tvksp"]
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_78pog"]
 color = Color(0.435294, 0.00392157, 0.8, 1)
 thickness = 6
 
@@ -68,18 +68,17 @@ grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(2.14325, 1.48407)
 
-[node name="HSlider" type="HSlider" parent="Panel/Panel"]
-layout_mode = 2
+[node name="Regulador de sonido" type="HSlider" parent="Panel/Panel"]
 offset_left = 48.0
 offset_top = 24.0
 offset_right = 464.0
 offset_bottom = 40.0
-theme_override_styles/slider = SubResource("StyleBoxLine_b37ju")
-theme_override_styles/grabber_area = SubResource("StyleBoxLine_7ynd1")
-theme_override_styles/grabber_area_highlight = SubResource("StyleBoxLine_tvksp")
-max_value = 1.0
-step = 0.05
-value = 1.0
+theme_override_styles/slider = SubResource("StyleBoxLine_7ynd1")
+theme_override_styles/grabber_area = SubResource("StyleBoxLine_tvksp")
+theme_override_styles/grabber_area_highlight = SubResource("StyleBoxLine_78pog")
+min_value = -40.0
+max_value = 0.8
+step = 0.5
 
 [node name="Volver" type="Button" parent="Panel"]
 layout_mode = 1
@@ -99,5 +98,5 @@ theme_override_font_sizes/font_size = 50
 theme_override_styles/normal = SubResource("StyleBoxFlat_7ynd1")
 text = "Volver"
 
-[connection signal="value_changed" from="Panel/Panel/HSlider" to="." method="_on_h_slider_value_changed"]
+[connection signal="value_changed" from="Panel/Panel/Regulador de sonido" to="." method="_on_h_slider_value_changed"]
 [connection signal="pressed" from="Panel/Volver" to="." method="_on_back_pressed"]

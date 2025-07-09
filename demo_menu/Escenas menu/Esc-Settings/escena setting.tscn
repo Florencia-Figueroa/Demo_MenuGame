@@ -38,6 +38,7 @@ func _process(delta):
 "
 
 [node name="Camera2D" type="Camera2D"]
+position = Vector2(952, 64)
 limit_left = -150
 limit_top = -10
 limit_right = 2100
@@ -54,12 +55,12 @@ script = SubResource("GDScript_tnlsk")
 
 [node name="capa 1" type="ParallaxLayer" parent="Fondo settings/ParallaxBackground"]
 motion_scale = Vector2(0.1, 0.1)
-motion_mirroring = Vector2(1920, 0)
+motion_mirroring = Vector2(2304, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="Fondo settings/ParallaxBackground/capa 1"]
-position = Vector2(1384, 2008)
+position = Vector2(2248, 1264)
 rotation = 3.14159
-scale = Vector2(2.02, 2.02)
+scale = Vector2(1.21069, 1.21412)
 texture = ExtResource("3_px5hr")
 centered = false
 
