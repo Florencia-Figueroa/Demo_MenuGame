@@ -18,8 +18,3 @@ func _on_timer_timeout():
 #Despawnea los obstaculos
 func _on_limite_body_entered(body: Node2D):
 	body.queue_free() 
-
-#func _input(event):
-#	if event.is_action_pressed("Pausa"):
-#		get_tree().paused = true
-#		menuPausa.show()

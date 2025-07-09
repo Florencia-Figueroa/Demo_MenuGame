@@ -1,5 +1,5 @@
-Node
 Label
+Node
 HBoxContainer
 Panel
 VBoxContainer
@@ -12,4 +12,3 @@ Marker2D
 Sprite2D
 Parallax2D
 Node2D
-AnimatedSprite2D
