@@ -1,9 +1,12 @@
-[gd_scene load_steps=3 format=3 uid="uid://bkcovvx5tw8fg"]
+[gd_scene load_steps=4 format=3 uid="uid://bkcovvx5tw8fg"]
 
 [ext_resource type="Script" uid="uid://bad2cwr6giub5" path="res://Escenas menu/Esc-NuevoJuego/botones/botones_nuevo_juego.gd" id="1_p7hoc"]
 [ext_resource type="Theme" uid="uid://eks3s53l8eja" path="res://Escenas menu/Esc-MenuInicio/botones/resourses/tema-azul-violeta.tres" id="2_s0eye"]
 
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_s0eye"]
+
 [node name="Escena nuevo juego" type="Control"]
+texture_filter = 1
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -12,39 +15,58 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_p7hoc")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="."]
+[node name="Panel" type="Panel" parent="."]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -355.0
-offset_top = -188.0
-offset_right = 53.0
-offset_bottom = -29.0
+offset_left = -777.0
+offset_top = -452.0
+offset_right = 777.0
+offset_bottom = 452.0
 grow_horizontal = 2
 grow_vertical = 2
-scale = Vector2(2.24, 2.24)
-theme_override_constants/separation = 20
-alignment = 1
+theme_override_styles/panel = SubResource("StyleBoxEmpty_s0eye")
 
-[node name="B-nuevaPartida" type="Button" parent="VBoxContainer"]
+[node name="B-nuevaPartida" type="Button" parent="Panel"]
 layout_mode = 2
+offset_left = 137.0
+offset_top = 304.0
+offset_right = 641.0
+offset_bottom = 504.0
 theme = ExtResource("2_s0eye")
-theme_override_font_sizes/font_size = 25
-text = "Jugar Nueva Partida"
+theme_override_font_sizes/font_size = 50
+text = "Jugar Nueva 
+Partida"
 
-[node name="B-continuarPartida" type="Button" parent="VBoxContainer"]
+[node name="B-continuarPartida" type="Button" parent="Panel"]
 layout_mode = 2
-theme_override_font_sizes/font_size = 25
-text = "Continuar juego "
+offset_left = 913.0
+offset_top = 304.0
+offset_right = 1417.0
+offset_bottom = 504.0
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_font_sizes/font_size = 50
+text = "Continuar 
+Juego "
 
-[node name="B-volver" type="Button" parent="VBoxContainer"]
-layout_mode = 2
+[node name="B-volver" type="Button" parent="Panel"]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 1.0
+offset_top = -176.0
+offset_right = 501.0
+offset_bottom = -86.0
+grow_vertical = 0
+theme_override_font_sizes/font_size = 50
 text = "Volver        
 "
 
-[connection signal="pressed" from="VBoxContainer/B-nuevaPartida" to="." method="_on_bnueva_partida_pressed"]
-[connection signal="pressed" from="VBoxContainer/B-continuarPartida" to="." method="_on_bcontinuar_partida_pressed"]
-[connection signal="pressed" from="VBoxContainer/B-volver" to="." method="_on_bvolver_pressed"]
+[connection signal="pressed" from="Panel/B-nuevaPartida" to="." method="_on_bnueva_partida_pressed"]
+[connection signal="pressed" from="Panel/B-continuarPartida" to="." method="_on_bcontinuar_partida_pressed"]
+[connection signal="pressed" from="Panel/B-volver" to="." method="_on_bvolver_pressed"]

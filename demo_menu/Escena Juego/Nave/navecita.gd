@@ -16,11 +16,6 @@ func _physics_process(delta: float) -> void:
 	
 	move_and_slide()
 
-#Permite al juego perder
 func gameOver():
-	#Detiene el spawneo de los obstaculos
-	puedeVolar = false
-	get_parent().get_child(9).queue_free()
-	velocidad_salto = 0 
-	get_tree().paused = true
+	get_tree().change_scene_to_file("res://Escenas menu/Esc-MenuInicio/escena menu.tscn")
 	

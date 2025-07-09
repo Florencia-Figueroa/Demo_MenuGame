@@ -1,7 +1,6 @@
-[gd_scene load_steps=17 format=3 uid="uid://cxw25455dqpmv"]
+[gd_scene load_steps=16 format=3 uid="uid://cxw25455dqpmv"]
 
 [ext_resource type="Script" uid="uid://5bx41hm3dpuu" path="res://Escena Juego/Nivel/nivel.gd" id="1_ctsld"]
-[ext_resource type="Script" uid="uid://b6irslihhd5m3" path="res://Scrips/camera_2d_mov.gd" id="2_2kghr"]
 [ext_resource type="PackedScene" uid="uid://bp3sruobqit4q" path="res://Escena Juego/Botones/boton_pausa.tscn" id="3_atjl3"]
 [ext_resource type="Texture2D" uid="uid://bsqyuvw064wy6" path="res://capas de escenarios/Capas de escenario ciudad/(0) - Fondo_ColorPlano.png" id="4_uykvk"]
 [ext_resource type="Texture2D" uid="uid://dpi5bx23x4qnx" path="res://capas de escenarios/Capas de escenario ciudad/(1) - Fondo_Estrellas.png" id="5_hl355"]
@@ -21,14 +20,6 @@ size = Vector2(171, 1153)
 
 [node name="Juego" type="Node2D"]
 script = ExtResource("1_ctsld")
-
-[node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(960, 538)
-scale = Vector2(0.774745, 0.484747)
-limit_left = 0
-limit_top = -64
-limit_bottom = 1100
-script = ExtResource("2_2kghr")
 
 [node name="PanelMenu" type="CanvasLayer" parent="."]
 

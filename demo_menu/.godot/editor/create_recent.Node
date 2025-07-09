@@ -1,7 +1,7 @@
+HBoxContainer
 Panel
 VBoxContainer
 BoxContainer
-HBoxContainer
 CollisionShape2D
 Area2D
 CharacterBody2D
