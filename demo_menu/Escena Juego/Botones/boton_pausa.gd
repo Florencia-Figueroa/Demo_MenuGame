@@ -14,13 +14,13 @@ func _physics_process(_delta) -> void:
 #Funcion del boton salir, el cual te lleva al menu principal:
 func _on_salir_pressed() -> void:
 	#provoca que al salir de la escena juego, el menu no siga "congelado".
-	get_tree().paused = false
+	get_tree().paused = not get_tree().paused 
 	get_tree().change_scene_to_file("res://Escenas menu/Esc-MenuInicio/escena menu.tscn")
 
 
 #Funcion del boton continuar para seguir con el juego donde se dejo:
 func _on_continuar_pressed() -> void:
 	#reanuda el juego.
-	get_tree().paused = false
+	get_tree().paused = not get_tree().paused 
 	#oculta el menu otra vez.
 	$".".visible = not $".".visible

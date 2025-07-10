@@ -1,21 +1,20 @@
-res://Escena Juego/Nave/navecita.tscn
-res://Escenas menu/Esc-MenuInicio/botones/resourses/tema-azul-violeta.tres
 res://Escena Juego/Nivel/juego.tscn
-res://Escena Juego/Botones/boton_pausa.tscn
+res://Escenas menu/Esc-MenuInicio/botones/resourses/tema-azul-violeta.tres
 res://Escenas menu/Esc-Settings/escena setting.tscn
 res://Escenas menu/Esc-MenuInicio/botones/menu.tscn
-res://default_bus_layout.tres
-res://Escena Juego/Nave/navecita.gd
-res://Escena Juego/Botones/boton_pausa.gd
-res://Escena Juego/Obstaculos/obstaculo_final.gd
-res://Sonido/audio.gd
-res://Escenas menu/Esc-Settings/botones/botones_setting.gd
-res://Escenas menu/Esc-Exit/botones/botones_de_exit.gd
-res://Escenas menu/Esc-Dificultad/botones/botones_dificultad.gd
-res://Escenas menu/Esc-IniciarJuego/botones/botones_nuevo_juego.gd
-res://Sonido/audio.tscn
-res://Escenas menu/Esc-MenuInicio/botones/menu.gd
-res://Scrips/camera_2d_mov.gd
-res://Escena Juego/Nivel/nivel.gd
 res://Escena Juego/Obstaculos/obstaculos.tscn
 res://Escena Juego/Obstaculos/obstaculoIndividual.tscn
+res://Escenas menu/Esc-MenuInicio/escena menu.tscn
+res://Scrips/camera_2d_mov.gd
+res://default_bus_layout.tres
+res://Sonido/audio.tscn
+res://Escenas menu/Esc-Settings/botones/botones setting.tscn
+res://Sonido/audio.gd
+res://Escena Juego/Nave/navecita.gd
+res://Escena Juego/Nivel/nivel.gd
+res://Escenas menu/Esc-Exit/botones/botones de exit.tscn
+res://Escena Juego/Nave/navecita.tscn
+res://Escena Juego/Obstaculos/obstaculo_final.gd
+res://Escenas menu/Esc-Settings/botones/botones_setting.gd
+res://Escena Juego/Botones/boton_pausa.tscn
+res://Escena Juego/Botones/boton_pausa.gd

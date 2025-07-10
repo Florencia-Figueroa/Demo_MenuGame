@@ -11,7 +11,7 @@ extends Node2D
 
 #Cuando el timer termina, spawnea un set de obstaculos:
 func _on_timer_timeout():
-	#Accede a la variable de la navecita.
+	#Accede a la variable de la escena navecita.
 	if $Navecita.puedeVolar: 
 		#crear y almacena una copia del obstaculo dentro de objeto.
 		var objeto = obstaculo.instantiate()

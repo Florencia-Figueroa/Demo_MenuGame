@@ -1,6 +1,5 @@
 extends CharacterBody2D
 
-
 #Define la velocidad con la que se mueve al spawnear
 var velocidad = 10
 
@@ -13,8 +12,6 @@ func _process(_delta):
 #Causa que al colisionar con un cuerpo, pierda el juego. 
 func colision(body):
 	if body.name== "Navecita":
-		#detiene al obstaculo
-		velocidad = 0 
 		body.gameOver()
 
 #Causa que pierda el juego al chocar la nave contra un obstaculo 
