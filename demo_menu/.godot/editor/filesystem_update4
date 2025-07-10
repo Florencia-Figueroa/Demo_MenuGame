@@ -16,3 +16,6 @@ res://Escenas menu/Esc-IniciarJuego/botones/botones_nuevo_juego.gd
 res://Sonido/audio.tscn
 res://Escenas menu/Esc-MenuInicio/botones/menu.gd
 res://Scrips/camera_2d_mov.gd
+res://Escena Juego/Nivel/nivel.gd
+res://Escena Juego/Obstaculos/obstaculos.tscn
+res://Escena Juego/Obstaculos/obstaculoIndividual.tscn

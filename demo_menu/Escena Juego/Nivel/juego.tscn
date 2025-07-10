@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://cxw25455dqpmv"]
+[gd_scene load_steps=15 format=3 uid="uid://cxw25455dqpmv"]
 
 [ext_resource type="Script" uid="uid://5bx41hm3dpuu" path="res://Escena Juego/Nivel/nivel.gd" id="1_ctsld"]
 [ext_resource type="PackedScene" uid="uid://bp3sruobqit4q" path="res://Escena Juego/Botones/boton_pausa.tscn" id="3_atjl3"]
@@ -13,7 +13,6 @@
 [ext_resource type="Texture2D" uid="uid://bkgcbhbqrb3gt" path="res://capas de escenarios/Capas de escenario ciudad/(9) - PrimerPlano_Vereda.png" id="12_5hm4v"]
 [ext_resource type="Texture2D" uid="uid://pq10pq0wf22n" path="res://capas de escenarios/Capas de escenario ciudad/(10) - PrimerPlano_Faros.png" id="13_arbvo"]
 [ext_resource type="PackedScene" uid="uid://ditlyidrfnxeu" path="res://Escena Juego/Nave/navecita.tscn" id="14_0b24g"]
-[ext_resource type="PackedScene" uid="uid://b6jnnv3m68hou" path="res://Escena Juego/Obstaculos/obstaculos.tscn" id="15_gpcng"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_uae3u"]
 size = Vector2(171, 1153)
@@ -126,9 +125,6 @@ texture = ExtResource("13_arbvo")
 
 [node name="Navecita" parent="." instance=ExtResource("14_0b24g")]
 position = Vector2(344, 616)
-
-[node name="Obstaculos (flechas)" parent="." instance=ExtResource("15_gpcng")]
-position = Vector2(2456, 408)
 
 [node name="spawn" type="Marker2D" parent="."]
 position = Vector2(2008, 600)

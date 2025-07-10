@@ -6,12 +6,14 @@ var velocidad = 10
 
 #Permite que se mueva atravez de la pantalla
 func _process(_delta):
+	#Le resta para que se mueva hacia el eje 0.
 	velocity.x -= velocidad
 	move_and_slide()
 
 #Causa que al colisionar con un cuerpo, pierda el juego. 
 func colision(body):
 	if body.name== "Navecita":
+		#detiene al obstaculo
 		velocidad = 0 
 		body.gameOver()
 

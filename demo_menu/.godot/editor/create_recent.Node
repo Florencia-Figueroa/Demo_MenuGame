@@ -1,14 +1,14 @@
+CollisionShape2D
+Node2D
 Label
 Node
 HBoxContainer
 Panel
 VBoxContainer
 BoxContainer
-CollisionShape2D
 Area2D
 CharacterBody2D
 Timer
 Marker2D
 Sprite2D
 Parallax2D
-Node2D
