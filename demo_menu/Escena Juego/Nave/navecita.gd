@@ -4,7 +4,7 @@ extends CharacterBody2D
 @export var gravedad = 11
 var puedeVolar = true
 
-func _physics_process(delta: float) -> void:
+func _physics_process(_delta):
 	#Habilita a la navecita a flotar
 	if not is_on_floor():
 		velocity.y += gravedad

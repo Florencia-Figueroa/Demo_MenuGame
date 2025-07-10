@@ -22,6 +22,11 @@ grow_vertical = 2
 size_flags_horizontal = 4
 script = ExtResource("1_26wsh")
 
+[node name="LogoJuego" type="Sprite2D" parent="."]
+position = Vector2(10, -379)
+scale = Vector2(2.04, 2.04)
+texture = ExtResource("3_6f80r")
+
 [node name="Panel" type="Panel" parent="."]
 layout_mode = 1
 anchors_preset = 8
@@ -81,11 +86,6 @@ size_flags_horizontal = 10
 theme = ExtResource("2_bbj5q")
 theme_override_font_sizes/font_size = 50
 text = "  Settings  "
-
-[node name="LogoJuego" type="Sprite2D" parent="."]
-position = Vector2(10, -379)
-scale = Vector2(2.04, 2.04)
-texture = ExtResource("3_6f80r")
 
 [connection signal="pressed" from="Panel/iniciar juego" to="." method="_on_iniciar_juego_pressed"]
 [connection signal="pressed" from="Panel/HBoxContainer/exit" to="." method="_on_exit_pressed"]

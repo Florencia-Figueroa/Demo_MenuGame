@@ -1,5 +1,6 @@
 [gd_scene load_steps=14 format=3 uid="uid://mromr2gyoifl"]
 
+[ext_resource type="Script" uid="uid://b6irslihhd5m3" path="res://Scrips/camera_2d_mov.gd" id="1_px5hr"]
 [ext_resource type="PackedScene" uid="uid://dnx8gvcy7xr3a" path="res://Escenas menu/Esc-Settings/botones/botones setting.tscn" id="2_vr05w"]
 [ext_resource type="Texture2D" uid="uid://chu185l3ik3px" path="res://capas de escenarios/Escena ciudad lejos - dificultad/(0) fondo.png" id="3_px5hr"]
 [ext_resource type="Texture2D" uid="uid://b3pd33mw76p8f" path="res://capas de escenarios/Escena ciudad lejos - dificultad/(1) estrellas 1.png" id="4_p8auy"]
@@ -13,36 +14,12 @@
 [ext_resource type="Texture2D" uid="uid://caa5kaeh4amgg" path="res://capas de escenarios/escena continuar juego/(6) piedras 2 mas cerca.png" id="12_ule1m"]
 [ext_resource type="Texture2D" uid="uid://dshyoytkg4idt" path="res://capas de escenarios/escena continuar juego/(6) piedras 3 mas cerca.png" id="13_bd3c5"]
 
-[sub_resource type="GDScript" id="GDScript_tnlsk"]
-script/source = "extends Camera2D
-
-class_name scriptsCamaraParallax
-
-#Para ajustar la velocidad en la que se mueve el mouse
-@export var velocidadMouse: float = 1
-
-func _process(delta):
-	
-	#Guardo en una variable la posicion del mouse segun como se encunetre en la ventana
-	var mousePosicionVentana: Vector2 = get_viewport().get_mouse_position()
-
-	#Guardo en una variable las cordenadas el mouse (segun la ventana) a cordenadas segun el juego
-	#ya que es donde se va a mover el mouse (dentro del juego y no por fuera de la ventana)
-	var mousePosicionJuego: Vector2 = get_viewport().get_mouse_position()
-	  
-	#Para suavizar el movimiento del mouse:
-	var movimientoSuave: Vector2 = mousePosicionJuego
-
-	#Convino la posicion actual del mouse con la deseada para generar ese efecto de suavizado
-	position = position.lerp(movimientoSuave, velocidadMouse * delta)
-"
-
 [node name="Camera2D" type="Camera2D"]
 limit_left = -150
 limit_top = -10
 limit_right = 2100
 limit_bottom = 1100
-script = SubResource("GDScript_tnlsk")
+script = ExtResource("1_px5hr")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 

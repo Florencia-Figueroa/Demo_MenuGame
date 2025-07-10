@@ -5,7 +5,7 @@ extends CharacterBody2D
 var velocidad = 10
 
 #Permite que se mueva atravez de la pantalla
-func _process(delta: float) -> void:
+func _process(_delta):
 	velocity.x -= velocidad
 	move_and_slide()
 
